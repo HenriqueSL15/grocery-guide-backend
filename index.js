@@ -1,17 +1,20 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
 const cors = require("cors");
+const fs = require("fs");
+const cron = require("node-cron");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
-const port = 5000;
 
+const port = 5000;
 let info = "";
+const DATA_FILE = "scraped_data.json";
 
 // Função de scraping
 async function scrapeSupermarket(url) {
-  console.log(url);
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   if (
     url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
@@ -156,7 +159,7 @@ async function scrapeSupermarket(url) {
       //console.log(products);
 
       await browser.close(); // Fecha o navegador
-      return "Scraping concluído."; // Retorna a resposta
+      return products; // Retorna a resposta
     } catch (error) {
       console.error("Erro ao fazer scraping:", error);
       await browser.close(); // Fecha o navegador em caso de erro
@@ -165,45 +168,65 @@ async function scrapeSupermarket(url) {
   }
 }
 
-// Rota para receber qual é o site e dados
-app.post("/info", async (req, res) => {
-  console.log(info[2]);
+// Função para realizar scraping diário
+async function performDailyScraping() {
+  try {
+    const activeCategories = Object.entries(info[2])
+      .filter(([key, value]) => value)
+      .map(([key]) => key);
+
+    const scrapingResults = {};
+
+    for (const category of activeCategories) {
+      const url = info[1][category];
+      if (url) {
+        console.log(`Iniciando scraping para: ${category} - ${url}`);
+        scrapingResults[category] = await scrapeSupermarket(url);
+      } else {
+        scrapingResults[category] = [];
+      }
+    }
+
+    // Salvar resultados no arquivo JSON
+    fs.writeFileSync(DATA_FILE, JSON.stringify(scrapingResults, null, 2));
+    console.log("Scraping diário concluído e dados salvos.");
+  } catch (error) {
+    console.error("Erro durante o scraping diário:", error);
+  }
+}
+
+// Adicionar um endpoint para iniciar o scraping manualmente
+app.post("/start-scraping", async (req, res) => {
+  try {
+    await performDailyScraping();
+    res.send("Scraping manual iniciado e concluído com sucesso.");
+  } catch (error) {
+    console.error("Erro ao iniciar scraping manual:", error);
+    res.status(500).send("Erro ao iniciar scraping manual.");
+  }
+});
+
+// Configurar cron job para executar o scraping diariamente às 00:00
+cron.schedule("0 0 * * *", performDailyScraping);
+
+// Rota para receber informações iniciais
+app.post("/info", (req, res) => {
   info = req.body;
   res.send("Informações recebidas.");
 });
 
-// Rota para o scraping
-app.get("/scrape", async (req, res) => {
+// Rota para acessar os dados armazenados
+app.get("/data", (req, res) => {
   try {
-    // Filtrar categorias ativas
-    const activeCategories = Object.entries(info[2])
-      .filter(([key, value]) => value) // Filtra chaves com valor `true`
-      .map(([key]) => key); // Retorna apenas as chaves
-
-    console.log("Categorias ativas:", activeCategories);
-
-    // Realizar scraping para todas as categorias ativas em paralelo
-    const scrapingResults = await Promise.all(
-      activeCategories.map(async (category) => {
-        try {
-          const url = info[1][category];
-          if (url) {
-            console.log(`Iniciando scraping para: ${category} - ${url}`);
-            const result = await scrapeSupermarket(url); // Faz o scraping
-            return { category, result };
-          } else {
-            return { category, result: "Nenhum link encontrado" };
-          }
-        } catch (error) {
-          return { category, error: error.message };
-        }
-      })
-    );
-
-    res.json({ message: "Scraping concluído.", results: scrapingResults });
+    if (fs.existsSync(DATA_FILE)) {
+      const data = fs.readFileSync(DATA_FILE, "utf8");
+      res.json(JSON.parse(data));
+    } else {
+      res.status(404).send("Dados ainda não disponíveis.");
+    }
   } catch (error) {
-    console.error("Erro durante o scraping:", error);
-    res.status(500).send("Erro ao fazer scraping");
+    console.error("Erro ao acessar dados armazenados:", error);
+    res.status(500).send("Erro ao acessar dados armazenados.");
   }
 });
 
