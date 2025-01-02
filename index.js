@@ -11,7 +11,7 @@ let info = "";
 // Função de scraping
 async function scrapeSupermarket(url) {
   console.log(url);
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   if (
     url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
@@ -153,7 +153,7 @@ async function scrapeSupermarket(url) {
       });
 
       // Você pode fazer o que quiser com os produtos aqui
-      console.log(products);
+      //console.log(products);
 
       await browser.close(); // Fecha o navegador
       return "Scraping concluído."; // Retorna a resposta
@@ -163,86 +163,11 @@ async function scrapeSupermarket(url) {
       throw error;
     }
   }
-  // else if (
-  //   url.toLowerCase().startsWith("https://superolhodagua.instabuy.com.br/cat/")
-  // ) {
-  //   try {
-  //     // Iniciar a navegação
-  //     await page.goto(url, { waitUntil: "domcontentloaded" });
-
-  //     // Aguarde a navegação ou atualização da página
-  //     await page.waitForNavigation({ waitUntil: "networkidle0" });
-
-  //     // Realizar a rolagem da página para baixo
-  //     await page.evaluate(() => {
-  //       return new Promise((resolve) => {
-  //         let distance = 100; // Distância a ser rolada a cada vez
-  //         let scrollHeight = 12000;
-  //         let scrolled = 0;
-
-  //         // Rolando até o fim da página ou até 5 vezes
-  //         let interval = setInterval(() => {
-  //           window.scrollBy(0, distance);
-  //           scrolled += distance;
-  //           if (scrolled >= scrollHeight) {
-  //             clearInterval(interval);
-  //             resolve(); // Resolve a promessa quando a rolagem terminar
-  //           }
-  //         }, 100); // Rolagem a cada 500ms
-  //       });
-  //     });
-
-  //     // Extrair dados dos produtos
-  //     const products = await page.evaluate(() => {
-  //       const items = [];
-
-  //       // Selecionar todas as divs com a classe para os produtos
-  //       const productElements = document.querySelectorAll(".shelf-item");
-
-  //       if (!productElements.length) {
-  //         console.warn(
-  //           "Nenhum elemento com a classe .shelf-item foi encontrado."
-  //         );
-  //       }
-
-  //       productElements.forEach((product) => {
-  //         // Extraindo o título
-  //         const titleElement = product.querySelector(".shelf-item__title-link");
-  //         const title = titleElement
-  //           ? titleElement.textContent.trim()
-  //           : "Título indisponível";
-
-  //         // Extraindo o preço
-  //         const priceElement = product.querySelector("div.best-price strong");
-  //         const price = priceElement
-  //           ? priceElement.textContent.trim()
-  //           : "Preço indisponível";
-
-  //         // Extraindo a URL da imagem
-  //         const imageElement = product.querySelector(
-  //           "a.shelf-item__img-link img"
-  //         );
-  //         const image = imageElement ? imageElement.src : "Imagem indisponível";
-
-  //         // Adiciona o item mesmo que alguns dados estejam ausentes
-  //         items.push({ title, price, image });
-  //       });
-
-  //       return items; // Retorna os produtos encontrados
-  //     });
-
-  //     //await browser.close(); // Fecha o navegador
-  //     return products; // Retorna os produtos para a resposta
-  //   } catch (error) {
-  //     console.error("Erro ao fazer scraping:", error);
-  //     // await browser.close(); // Fecha o navegador em caso de erro
-  //     throw error;
-  //   }
-  // }
 }
 
 // Rota para receber qual é o site e dados
 app.post("/info", async (req, res) => {
+  console.log(info[2]);
   info = req.body;
   res.send("Informações recebidas.");
 });
@@ -257,17 +182,23 @@ app.get("/scrape", async (req, res) => {
 
     console.log("Categorias ativas:", activeCategories);
 
-    // Realizar scraping para cada categoria ativa
-    const scrapingResults = [];
-    for (const category of activeCategories) {
-      const url = info[1][category];
-      if (url) {
-        const result = await scrapeSupermarket(url); // Faz o scraping
-        scrapingResults.push({ category, result });
-      } else {
-        console.warn(`Nenhum link encontrado para a categoria: ${category}`);
-      }
-    }
+    // Realizar scraping para todas as categorias ativas em paralelo
+    const scrapingResults = await Promise.all(
+      activeCategories.map(async (category) => {
+        try {
+          const url = info[1][category];
+          if (url) {
+            console.log(`Iniciando scraping para: ${category} - ${url}`);
+            const result = await scrapeSupermarket(url); // Faz o scraping
+            return { category, result };
+          } else {
+            return { category, result: "Nenhum link encontrado" };
+          }
+        } catch (error) {
+          return { category, error: error.message };
+        }
+      })
+    );
 
     res.json({ message: "Scraping concluído.", results: scrapingResults });
   } catch (error) {
