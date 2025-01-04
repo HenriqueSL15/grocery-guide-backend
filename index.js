@@ -14,7 +14,7 @@ const DATA_FILE = "scraped_data.json";
 
 // Função de scraping
 async function scrapeSupermarket(url) {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   if (
     url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())

@@ -1,16 +1,6 @@
 {
   "alimentacao_saudavel": [
     {
-      "title": "Semente de Linhaça Frutos Terra 200g",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/195250-160-160/7898383860167.jpg?v=637661889883100000"
-    },
-    {
-      "title": "Adoçante Líquido Linea Sucralose 75ml",
-      "price": "R$ 12,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/211418-160-160/7896001250628.jpg?v=637874355669400000"
-    },
-    {
       "title": "CEREAL EM BARRA TRIO 20G COM 3 DE AVELÃ, CASTANHA E CHOCOLATE",
       "price": "R$ 3,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/207121-160-160/7897900310772.jpg?v=637782742640130000"
@@ -141,6 +131,11 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/176722-160-160/1130250.jpg?v=637298334274370000"
     },
     {
+      "title": "Salgadinho Orgânico Mãe Terra Ceboloko Cebola 45g",
+      "price": "R$ 5,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/172348-160-160/07896496972340_0.jpg?v=637284431802970000"
+    },
+    {
       "title": "Barra de Cereal Trio Brigadeiro 20g",
       "price": "R$ 1,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/202132-160-160/7897900312578.jpg?v=637722389147700000"
@@ -159,28 +154,33 @@
       "title": "Barra de Cereal de Banana, Aveia e Mel Trio 60g com 3 unidades",
       "price": "R$ 3,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/207070-160-160/7897900310635.jpg?v=637781369798630000"
+    },
+    {
+      "title": "Gergelim Frutos Terra Descascado 200g",
+      "price": "R$ 10,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195253-160-160/7898383860280.jpg?v=637661890627700000"
     }
   ],
   "bebidas": [
     {
       "title": "Refrigerante Coca-Cola 2 Litros",
-      "price": "R$ 7,98",
+      "price": "R$ 7,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/214508-160-160/2301822.jpg?v=637946944672970000"
     },
     {
       "title": "Suco Natural One Uva 1,5 Litro",
-      "price": "R$ 16,90",
+      "price": "R$ 14,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/215104-160-160/2380455.jpg?v=637964542579700000"
+    },
+    {
+      "title": "Refrigerante Coca-Cola Lata 220ml",
+      "price": "R$ 2,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/184576-160-160/7894900010398_2.jpg?v=637497077310500000"
     },
     {
       "title": "Suco Integral Prat's Laranja 900ml",
       "price": "R$ 15,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/157281-160-160/1140728.jpg?v=637210460846100000"
-    },
-    {
-      "title": "Bebida Mista Skol Beats Senses Lata 269ml",
-      "price": "R$ 5,49",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237069-160-160/7891149105564--1-.jpg?v=638527685605700000"
     },
     {
       "title": "Água Tônica Antarctica Sem Açúcar Lata 269ml",
@@ -193,18 +193,8 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/188974-160-160/1799509.jpg?v=637593716982130000"
     },
     {
-      "title": "Refrigerante Coca-Cola Sem Açúcar 1,51 Litro",
-      "price": "R$ 7,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190245-160-160/687472.jpg?v=637623873735230000"
-    },
-    {
-      "title": "Refrigerante Coca-Cola Lata 220ml",
-      "price": "R$ 2,49",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/184576-160-160/7894900010398_2.jpg?v=637497077310500000"
-    },
-    {
       "title": "Água Mineral Crystal Com Gás 500ml",
-      "price": "R$ 1,49",
+      "price": "R$ 1,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/190345-160-160/654590.jpg?v=637624744770600000"
     },
     {
@@ -214,17 +204,17 @@
     },
     {
       "title": "Refrigerante Guaraná Antarctica Pet 2 Litros",
-      "price": "R$ 6,99",
+      "price": "R$ 7,59",
       "image": "https://comper.vteximg.com.br/arquivos/ids/222879-160-160/66dc38c3f47a13a8a5a6bef177f1dca7_refrigerante-guarana-antarctica-pet-2-litros_lett_1.jpg?v=638180264072230000"
     },
     {
       "title": "Refrigerante Guaraná Antarctica Zero Açúcar Pet 2 Litros",
-      "price": "R$ 6,99",
+      "price": "R$ 7,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/230236-160-160/207233.jpg?v=638375803826770000"
     },
     {
       "title": "Refrigerante Coca-Cola Zero Açúcar Pet 2 Litros",
-      "price": "R$ 7,98",
+      "price": "R$ 7,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/188984-160-160/158666.jpg?v=637593721825400000"
     },
     {
@@ -253,9 +243,19 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/237102-160-160/7891149108718--1-.jpg?v=638527686755200000"
     },
     {
-      "title": "Energético Monster Energy 473ml",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/184138-160-160/70847022015_2.jpg?v=637496855708300000"
+      "title": "Refrigerante Coca-Cola Sem Açúcar 1,51 Litro",
+      "price": "R$ 7,29",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/190245-160-160/687472.jpg?v=637623873735230000"
+    },
+    {
+      "title": "Refrigerante Baré Guarana Pet 2 Litros",
+      "price": "R$ 5,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/213535-160-160/7891991004107.jpg?v=637928881339170000"
+    },
+    {
+      "title": "Suco Integral One Nat Laranja 900ml",
+      "price": "R$ 8,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/160699-160-160/971707.jpg?v=637210548354000000"
     },
     {
       "title": "Suco Pronto Del Valle Mais Néctar de Uva 1 Litro",
@@ -263,24 +263,24 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/203101-160-160/7898341430098.jpg?v=637747474659730000"
     },
     {
+      "title": "Suco Pronto Nutrinectar Uva 1 Litro",
+      "price": "R$ 3,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/200716-160-160/7898920195141.jpg?v=637707736092600000"
+    },
+    {
       "title": "Suco Pronto Nutrinectar Goiaba 200ml",
-      "price": "R$ 1,69",
+      "price": "R$ 1,49",
       "image": "https://comper.vteximg.com.br/arquivos/ids/160092-160-160/622486.jpg?v=637210532943700000"
     },
     {
       "title": "Água de Coco Ducoco 1 Litro",
-      "price": "R$ 10,90",
+      "price": "R$ 12,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/165957-160-160/524492_1.jpg?v=637224397645930000"
     },
     {
       "title": "Suco Concentrado Dafruta Caju 500ml",
       "price": "R$ 3,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/190340-160-160/465569.jpg?v=637624742007400000"
-    },
-    {
-      "title": "Bebida Líquida Adoçada Maguary de Maracujá 1 Litro",
-      "price": "R$ 5,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/160134-160-160/81191.jpg?v=637210533812300000"
     },
     {
       "title": "Cerveja Amstel Lager Puro Malte Long Neck 355ml",
@@ -304,30 +304,35 @@
     },
     {
       "title": "Refresco em Pó Frisco Cajá 18g",
-      "price": "R$ 0,99",
+      "price": "R$ 0,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245380-160-160/2928558.jpg?v=638699604241370000"
     },
     {
       "title": "Refresco em Pó Frisco Laranja com Acerola 18g",
-      "price": "R$ 0,99",
+      "price": "R$ 0,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245379-160-160/2928507.jpg?v=638699603426730000"
     },
     {
       "title": "Refresco em Pó Frisco Goiaba 18g",
-      "price": "R$ 0,99",
+      "price": "R$ 0,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245378-160-160/2928493.jpg?v=638699602878770000"
     },
     {
       "title": "Isotônico Plant Power Jungle Endurance Limonada 500ml",
-      "price": "R$ 7,99",
+      "price": "R$ 5,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245377-160-160/2927527.jpg?v=638699602113800000"
     }
   ],
   "casa_e_lazer": [],
   "carnes": [
     {
+      "title": "Carne Moída de Paleta",
+      "price": "R$ 17,50",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/207281-160-160/1784544.jpg?v=637787209143100000"
+    },
+    {
       "title": "Filé de Sassami de Frango Copacol Pacote 1kg",
-      "price": "R$ 16,98",
+      "price": "R$ 19,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/189156-160-160/656070.jpg?v=637602463246700000"
     },
     {
@@ -337,7 +342,7 @@
     },
     {
       "title": "Coxão Mole Peça Inteira",
-      "price": "R$ 21,50",
+      "price": "R$ 16,95",
       "image": "https://comper.vteximg.com.br/arquivos/ids/195293-160-160/1783700_1.jpg?v=637662731974700000"
     },
     {
@@ -346,13 +351,13 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/207284-160-160/1783483-Contra-file-em-bife-3.jpg?v=637787262565230000"
     },
     {
-      "title": "Carne Moída de Dianteiro Bovino",
-      "price": "R$ 17,00",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/199869-160-160/1646826_Carne-Moida-de-Dianteiro-Bovino.jpg?v=637697202529470000"
+      "title": "Carne Moída de Traseiro Bovino",
+      "price": "R$ 20,00",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/203948-160-160/1646591-CARNE-MOIDA-TRASEIRA3.jpg?v=637769358317870000"
     },
     {
       "title": "Filé de Tilápia Copacol Pacote 800g",
-      "price": "R$ 38,98",
+      "price": "R$ 37,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/189109-160-160/7891527062991.jpg?v=637601603001130000"
     },
     {
@@ -361,14 +366,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/243783-160-160/image-to-upload-0.jpg?v=638676605778000000"
     },
     {
-      "title": "Coxinha da Asa",
-      "price": "R$ 9,50",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214355-160-160/733210.jpg?v=637946123324100000"
-    },
-    {
-      "title": "Coxa e Sobrecoxa Copacol a Passarinho Congelada IQF 800g",
-      "price": "R$ 9,78",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/189154-160-160/655953.jpg?v=637602462723200000"
+      "title": "Paleta Bovina Com Osso",
+      "price": "R$ 15,00",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/182019-160-160/841099_1.jpg?v=637467737173670000"
     },
     {
       "title": "Filé de Frango Copacol Bandeja 1kg",
@@ -376,19 +376,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/189110-160-160/7891527000665.jpg?v=637601609278070000"
     },
     {
-      "title": "Jerked Suíno Seara Salgado, Curado e Dessecado 400g",
-      "price": "R$ 11,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244158-160-160/2822628.jpg?v=638678080642070000"
-    },
-    {
-      "title": "Acém Bovino Pedaço Kg",
-      "price": "R$ 18,50",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/182305-160-160/1784633_acem.jpg?v=637484790179830000"
-    },
-    {
-      "title": "Carne Moída de Traseiro Bovino",
-      "price": "R$ 20,00",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/203948-160-160/1646591-CARNE-MOIDA-TRASEIRA3.jpg?v=637769358317870000"
+      "title": "Bacon Haciendas Fatiado 200g",
+      "price": "R$ 17,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/180886-160-160/2110466_BaconHaciendasFatiado200g.jpg?v=637432107352030000"
     },
     {
       "title": "Camarão Maris Sem Vísceras Descascado e Cozido 36/40 400g",
@@ -406,13 +396,8 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/214021-160-160/1002600.jpg?v=637940973886700000"
     },
     {
-      "title": "Sobrecoxa de Frango Sadia 1kg",
-      "price": "R$ 14,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/238660-160-160/7893000436725.jpg?v=638556066563970000"
-    },
-    {
       "title": "Coxa de Frango Seara Com 1kg",
-      "price": "R$ 11,78",
+      "price": "R$ 10,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/243926-160-160/image-to-upload-0.jpg?v=638676609865870000"
     },
     {
@@ -421,24 +406,34 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/243780-160-160/image-to-upload-0.jpg?v=638676605621300000"
     },
     {
+      "title": "Moela de Frango Resfriado",
+      "price": "R$ 7,50",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/182261-160-160/4646.jpg?v=637481336651130000"
+    },
+    {
       "title": "Linguiça Seara Suína",
-      "price": "R$ 11,39",
+      "price": "R$ 10,19",
       "image": "https://comper.vteximg.com.br/arquivos/ids/243752-160-160/image-to-upload-0.jpg?v=638676604907470000"
     },
     {
       "title": "Costela Bovina Especial Peça Kg",
-      "price": "R$ 37,49",
+      "price": "R$ 41,97",
       "image": "https://comper.vteximg.com.br/arquivos/ids/180643-160-160/745359_1.jpg?v=637423672381070000"
     },
     {
       "title": "Bisteca Suína",
-      "price": "R$ 9,49",
+      "price": "R$ 8,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/180696-160-160/745294_1.jpg?v=637424463916370000"
     },
     {
       "title": "Peito de Frango Resfriado",
       "price": "R$ 9,50",
       "image": "https://comper.vteximg.com.br/arquivos/ids/180679-160-160/743852_1.jpg?v=637424320107870000"
+    },
+    {
+      "title": "Coxinha da Asa",
+      "price": "R$ 9,50",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/214355-160-160/733210.jpg?v=637946123324100000"
     },
     {
       "title": "Costela Suína",
@@ -456,37 +451,52 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/189161-160-160/683540.jpg?v=637602464460670000"
     },
     {
+      "title": "Coxa e Sobrecoxa Copacol a Passarinho Congelada IQF 800g",
+      "price": "R$ 7,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/189154-160-160/655953.jpg?v=637602462723200000"
+    },
+    {
       "title": "Coxinha de Asa de Frango Sadia IQF 1kg",
       "price": "R$ 16,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245954-160-160/635740.jpg?v=638705929546200000"
     },
     {
       "title": "Linguiça Calabresa Seara 400g",
-      "price": "R$ 10,98",
+      "price": "R$ 9,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/243744-160-160/image-to-upload-0.jpg?v=638676604739800000"
     },
     {
       "title": "Linguiça de Frango Copacol Pacote 800g",
-      "price": "R$ 13,99",
+      "price": "R$ 12,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/189146-160-160/209481.jpg?v=637602460798330000"
     },
     {
-      "title": "Fígado de Frango Perdigão 1kg",
-      "price": "R$ 4,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/178551-160-160/Figado-de-Frango-Congelado-Perdigao-1kg.jpg?v=637362879502370000"
+      "title": "Jerked Suíno Seara Salgado, Curado e Dessecado 400g",
+      "price": "R$ 11,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244158-160-160/2822628.jpg?v=638678080642070000"
     },
     {
-      "title": "Pernil Suíno Com Osso Toucinho",
-      "price": "R$ 18,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/182342-160-160/1535528-pernil-suino.jpg?v=637485967666200000"
+      "title": "Paleta Bovina",
+      "price": "R$ 19,50",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/207288-160-160/1784498.jpg?v=637787299262570000"
     },
     {
-      "title": "Bacon Haciendas Fatiado 200g",
+      "title": "Carne Moída de Dianteiro Bovino",
       "price": "Preço indisponível",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/180886-160-160/2110466_BaconHaciendasFatiado200g.jpg?v=637432107352030000"
+      "image": "https://comper.vteximg.com.br/arquivos/ids/199869-160-160/1646826_Carne-Moida-de-Dianteiro-Bovino.jpg?v=637697202529470000"
     }
   ],
   "congelados": [
+    {
+      "title": "Açaí Split Original com Guaraná Pote 1,5L",
+      "price": "R$ 15,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244606-160-160/2933896.png?v=638683341485370000"
+    },
+    {
+      "title": "Pão de Queijo Forno de Minas Edição 30 Anos 400g",
+      "price": "R$ 10,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/197313-160-160/7896074606285.jpg?v=637673165107430000"
+    },
     {
       "title": "Polpa de Frutas Frutpres Caju 100g",
       "price": "R$ 2,69",
@@ -499,23 +509,18 @@
     },
     {
       "title": "Batata Congelada Bem Brasil Mais Batata Tradicional 1,5kg",
-      "price": "R$ 22,98",
+      "price": "R$ 19,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/245273-160-160/2908018.jpg?v=638699490635500000"
     },
     {
       "title": "Pizza Congelada Rezende Mussarela 400g",
-      "price": "R$ 14,98",
+      "price": "R$ 10,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/214226-160-160/2670364_7894904255825_1.jpg?v=637943653328000000"
     },
     {
       "title": "Pizza Congelada Rezende Calabresa 400g",
-      "price": "R$ 14,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214223-160-160/2670267_7894904255818_1.jpg?v=637943652884000000"
-    },
-    {
-      "title": "Pão de Queijo Forno de Minas Edição 30 Anos 400g",
       "price": "R$ 10,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/197313-160-160/7896074606285.jpg?v=637673165107430000"
+      "image": "https://comper.vteximg.com.br/arquivos/ids/214223-160-160/2670267_7894904255818_1.jpg?v=637943652884000000"
     },
     {
       "title": "Morango Frutpress Congelado 1kg",
@@ -558,19 +563,14 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/204830-160-160/1548476-Polpa-de-Frutas-Frutpres-Abacaxi-com-Hortela-100g.jpg?v=637771824446270000"
     },
     {
-      "title": "Ervilha Copacol Congelada Pacote 300g",
-      "price": "R$ 9,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/189174-160-160/1264940.jpg?v=637602468916930000"
+      "title": "Hambúrguer Misto Rezende 56g",
+      "price": "R$ 1,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/171339-160-160/seara105.png?v=637279941853930000"
     },
     {
       "title": "Suco Pronto Natural One Uva e Maçã 900ml",
       "price": "R$ 15,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/169442-160-160/produtos-sku-971774.jpg?v=637268764102330000"
-    },
-    {
-      "title": "Pão de Queijo Forno de Minas Tradicional 400g",
-      "price": "R$ 10,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214663-160-160/743860.jpg?v=637952973433670000"
     },
     {
       "title": "Hambúrguer Seara Texas Burguer 672g",
@@ -579,33 +579,38 @@
     },
     {
       "title": "Sorvete Club Mex Ninho e Morango Pote 1,5L",
-      "price": "R$ 12,98",
+      "price": "R$ 11,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244603-160-160/2980061.jpg?v=638683329039600000"
     },
     {
       "title": "Sorvete Club Mex Ninho e Chocolate Pote 1,5L",
-      "price": "R$ 12,98",
+      "price": "R$ 11,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244602-160-160/2980053.jpg?v=638683328490270000"
     },
     {
       "title": "Sorvete Club Mex Creme Pote 1,5L",
-      "price": "R$ 12,98",
+      "price": "R$ 11,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244599-160-160/2980045.jpg?v=638683326270900000"
     },
     {
       "title": "Sorvete Club Mex Flocos Pote 1,5L",
-      "price": "R$ 12,98",
+      "price": "R$ 11,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244600-160-160/2980029.jpg?v=638683326815000000"
     },
     {
       "title": "Sorvete Club Mex Napolitano Pote 1,5L",
-      "price": "R$ 12,98",
+      "price": "R$ 11,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244601-160-160/2979985.jpg?v=638683327840200000"
     },
     {
-      "title": "Açaí Split Original com Guaraná Pote 1,5L",
-      "price": "R$ 19,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244606-160-160/2933896.png?v=638683341485370000"
+      "title": "Ervilha Congelada Camponella 1kg",
+      "price": "R$ 22,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246527-160-160/2954419.jpg?v=638714283136570000"
+    },
+    {
+      "title": "Brócolis Congelado Camponella 1kg",
+      "price": "R$ 16,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246526-160-160/2954400.jpg?v=638714282575600000"
     },
     {
       "title": "Picolé Bacio Di Latte Creme de Maracujá 70g",
@@ -614,7 +619,7 @@
     },
     {
       "title": "Sorvete Nestlé Tradicional Napolitano e Flocos 1,5L",
-      "price": "R$ 18,98",
+      "price": "R$ 17,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244300-160-160/2844869.jpg?v=638678989795030000"
     },
     {
@@ -641,11 +646,6 @@
       "title": "Picolé Bacio Di Latte Limão Siciliano 65g",
       "price": "R$ 19,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/244294-160-160/2843200.jpg?v=638678970676200000"
-    },
-    {
-      "title": "Picolé Bacio Di Latte Morango 65g",
-      "price": "R$ 19,89",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244293-160-160/2843170.jpg?v=638678970145170000"
     }
   ],
   "frios": [
@@ -655,23 +655,18 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/234103-160-160/7898215151708_99_10_1200_72_SRGB.jpg?v=638453277719970000"
     },
     {
-      "title": "Manteiga Paracatu Pote 500g",
-      "price": "R$ 26,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/213951-160-160/607517_Manteiga_Paracatu-500g.png?v=637939156854730000"
-    },
-    {
-      "title": "Queijo Mussarela Itambé Fatiado 300g",
-      "price": "R$ 18,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244064-160-160/2806991.jpg?v=638677959340530000"
+      "title": "Queijo Parmesão Ralado Itambé 50g",
+      "price": "R$ 4,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244751-160-160/2880806.jpg?v=638688281972800000"
     },
     {
       "title": "Presunto Seara Fatiado 180g",
-      "price": "R$ 7,98",
+      "price": "R$ 6,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/246390-160-160/7894904268511_1.jpg?v=638712927663600000"
     },
     {
       "title": "Queijo Mussarela Imbaúba Fatiado 150g",
-      "price": "R$ 7,78",
+      "price": "R$ 6,48",
       "image": "https://comper.vteximg.com.br/arquivos/ids/180567-160-160/2546582_QueijoMussarelaImbaubaFatiado150g.jpg?v=637421079149300000"
     },
     {
@@ -680,24 +675,14 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/166738-160-160/617342_1.jpg?v=637224419902400000"
     },
     {
-      "title": "Leite Fermentado Chamyto 450g",
-      "price": "R$ 6,48",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/186103-160-160/7891000070444.jpg?v=637508121035700000"
+      "title": "Manteiga Paracatu Pote 500g",
+      "price": "R$ 26,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/213951-160-160/607517_Manteiga_Paracatu-500g.png?v=637939156854730000"
     },
     {
       "title": "Margarina Qualy com Sal 500g",
       "price": "R$ 6,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/213745-160-160/7893000394209.jpg?v=637934840595870000"
-    },
-    {
-      "title": "Queijo Parmesão Ralado Itambé 50g",
-      "price": "R$ 4,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244751-160-160/2880806.jpg?v=638688281972800000"
-    },
-    {
-      "title": "Margarina Delícia Com Creme de Leite e Sal 500g",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/246359-160-160/7894904271528.jpg?v=638712927214600000"
     },
     {
       "title": "Iogurte Vigor Grego Frutas Vermelhas 90g",
@@ -710,14 +695,24 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/215946-160-160/7891097104404_99_3_1200_72_RGB.jpg?v=637985825658670000"
     },
     {
-      "title": "Queijo Mussarela Itambé Fatiado 150g",
-      "price": "R$ 9,48",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/213953-160-160/7896051165446_99_3_1200_72_RGB.jpg?v=637939158929170000"
+      "title": "Queijo Mussarela President Fatiado 300g",
+      "price": "R$ 17,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/209573-160-160/7891097103841.jpg?v=637825350805400000"
     },
     {
-      "title": "Presunto Perdigão Fatiado 200g",
-      "price": "R$ 9,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/178523-160-160/Presunto-Cozido-Fatiado-Perdigao-200g.jpg?v=637362879322500000"
+      "title": "Iogurte Batavo Pense Zero 1,15kg",
+      "price": "R$ 16,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/216002-160-160/7891097103650_1_1_1200_72_RGB.jpg?v=637985893137870000"
+    },
+    {
+      "title": "Iogurte Batavo Pense Zero Morango 1,15kg",
+      "price": "R$ 16,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/214141-160-160/7891097103643.jpg?v=637941126776430000"
+    },
+    {
+      "title": "Queijo Mussarela Imbaúba Fatiado 400g",
+      "price": "R$ 22,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/180568-160-160/2546604_QueijoMussarelaImbaubaFatiado400g.jpg?v=637421079988700000"
     },
     {
       "title": "Iogurte Itambé Natural Milk Integral 500g",
@@ -728,6 +723,11 @@
       "title": "Iogurte Itambé Natural Milk Integral 170g",
       "price": "R$ 3,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/169180-160-160/produtos-sku-2537370.jpg?v=637268759284630000"
+    },
+    {
+      "title": "Requeijão Cremoso Itambé Tradicional 400g",
+      "price": "R$ 17,59",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/169179-160-160/produtos-sku-2537257.jpg?v=637268759269130000"
     },
     {
       "title": "Queijo Mussarela Piracanjuba Fatiado 500g",
@@ -746,12 +746,12 @@
     },
     {
       "title": "Leite Habitus Integral 1 Litro",
-      "price": "R$ 4,48",
+      "price": "R$ 3,78",
       "image": "https://comper.vteximg.com.br/arquivos/ids/209467-160-160/1560069-Leite-Habitus-integral-1l.jpg?v=637820112406570000"
     },
     {
       "title": "Mortadela Perdigão Ouro Fatiada 200g",
-      "price": "R$ 8,98",
+      "price": "R$ 5,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/178506-160-160/Mortadela-Defumada-Perdigao-Ouro-200g.jpg?v=637362879212700000"
     },
     {
@@ -765,14 +765,24 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/171402-160-160/seara168.png?v=637279942119330000"
     },
     {
+      "title": "Queijo Mussarela Piracanjuba 150g",
+      "price": "R$ 9,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/179973-160-160/7898215150282.jpg?v=637393402212530000"
+    },
+    {
       "title": "Manteiga Itambé com Sal Pote 200g",
       "price": "R$ 12,59",
       "image": "https://comper.vteximg.com.br/arquivos/ids/186125-160-160/7896051135456.jpg?v=637508129111070000"
     },
     {
-      "title": "Iogurte Natural Nestlé com Mel 170g",
-      "price": "R$ 3,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/226990-160-160/7891000072974---Iogurte-Natural-Nestle-com-Mel-170g---1.jpg?v=638304001513630000"
+      "title": "Requeijão Cremoso Itambé Tradicional 220g",
+      "price": "R$ 9,48",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/155652-160-160/625043.jpg?v=637210422718170000"
+    },
+    {
+      "title": "Leite Fermentado Chamyto 450g",
+      "price": "R$ 6,48",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/186103-160-160/7891000070444.jpg?v=637508121035700000"
     },
     {
       "title": "Leite Piracanjuba Desnatado 1 Litro",
@@ -780,46 +790,46 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/234102-160-160/7898215151722_99_10_1200_72_SRGB.jpg?v=638453277658300000"
     },
     {
+      "title": "Iogurte Itambé Fit Mamão com Laranja 1,15kg",
+      "price": "R$ 15,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/245429-160-160/2947510.jpg?v=638699691185570000"
+    },
+    {
+      "title": "Margarina Delícia Com Creme de Leite e Sal 500g",
+      "price": "R$ 4,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246359-160-160/7894904271528.jpg?v=638712927214600000"
+    },
+    {
       "title": "Margarina Delícia Com Creme de Leite e Sal 1kg Embalagem Econômica",
       "price": "R$ 14,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/246340-160-160/7894904271511.jpg?v=638712927037830000"
     },
     {
-      "title": "Iogurte Vigor Grego Frutas Amarelas 90g",
-      "price": "R$ 2,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/218872-160-160/7896625211128_99_1_1200_72_RGB.jpg?v=638084364327670000"
-    },
-    {
-      "title": "Iogurte Vigor Grego Blueberry 90g",
-      "price": "R$ 2,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/218869-160-160/7896625211104_99_1_1200_72_RGB.jpg?v=638084364004270000"
-    },
-    {
-      "title": "Queijo Parmesão Vigor Fatiado 200g",
-      "price": "R$ 22,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/215902-160-160/7896625210664_99_3_1200_72_RGB.jpg?v=637983532369100000"
-    },
-    {
-      "title": "Bebida Láctea Carolina Morango Bandeja 360g",
-      "price": "R$ 3,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/242825-160-160/2655942.jpg?v=638664995206730000"
-    },
-    {
-      "title": "Queijo Mussarela President Fatiado 300g",
-      "price": "R$ 17,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/209573-160-160/7891097103841.jpg?v=637825350805400000"
+      "title": "Queijo Mussarela Itambé Fatiado 300g",
+      "price": "R$ 18,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244064-160-160/2806991.jpg?v=638677959340530000"
     }
   ],
   "higiene": [
+    {
+      "title": "Papel Higiênico Neve Supreme Folha Tripla 20M Leve 12 Pague 11 Rolos",
+      "price": "R$ 25,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244766-160-160/2884364.jpg?v=638688316185970000"
+    },
     {
       "title": "Papel Higiênico Cotton Deluxe Folha Dupla Neutro Compacto 30m Leve 12 Pague 11 Unidades",
       "price": "R$ 19,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/200635-160-160/7896301802923.jpg?v=637707666131100000"
     },
     {
-      "title": "Papel Higiênico Neve Supreme Folha Tripla 20M Leve 12 Pague 11 Rolos",
-      "price": "R$ 25,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244766-160-160/2884364.jpg?v=638688316185970000"
+      "title": "Papel Higiênico Mimmo Folha Dupla Neutro 30M | Com 12 Rolos",
+      "price": "R$ 13,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/245268-160-160/2905906.jpg?v=638699484571100000"
+    },
+    {
+      "title": "Creme Dental Oral-B 1.2.3 Anticáries Menta Suave 150g",
+      "price": "R$ 6,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244456-160-160/2871580.jpg?v=638681567502400000"
     },
     {
       "title": "Papel Higiênico Atualle Folha Dupla Neutro 12 Unidades",
@@ -837,24 +847,19 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/240890-160-160/4005900521910_1.jpg?v=638618390064930000"
     },
     {
-      "title": "Creme Dental Close Up Triple Hortelã 70g",
-      "price": "R$ 2,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/162909-160-160/1495224.jpg?v=637210602554170000"
-    },
-    {
       "title": "Condicionador Elseve Glycolic Gloss 400ml",
       "price": "R$ 24,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/234449-160-160/2929546_7908615055169_CONDIC.ELSEVE-GLYCOLIC-GLOSS-400ml.jpg?v=638461068891700000"
     },
     {
-      "title": "Papel Higiênico Mimmo Folha Dupla Neutro 30M | Com 12 Rolos",
-      "price": "R$ 13,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245268-160-160/2905906.jpg?v=638699484571100000"
+      "title": "Sabonete em Barra Siene Lavanda Roxo 85g",
+      "price": "R$ 1,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244754-160-160/2881780.jpg?v=638688283941600000"
     },
     {
-      "title": "Creme Dental Oral-B 1.2.3 Anticáries Menta Suave 150g",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244456-160-160/2871580.jpg?v=638681567502400000"
+      "title": "Sabonete em Barra Siene Erva Doce 85g",
+      "price": "R$ 1,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244268-160-160/2835274.jpg?v=638678948743070000"
     },
     {
       "title": "Sabonete Líquido Antibacteriano Rexona Erva Doce Refil 200ml",
@@ -862,9 +867,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/244154-160-160/2822067.jpg?v=638678078091870000"
     },
     {
-      "title": "Sabonete em Barra Flor de Ypê Flor de Maçã e Framboesa 85g",
-      "price": "R$ 1,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/197330-160-160/7896098902233.jpg?v=637673173026600000"
+      "title": "Kit Pantene Hidratação Shampoo 350ml e Condicionador 175ml",
+      "price": "R$ 19,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/206157-160-160/7500435169370-Shampoo_Pantene_Hidrata_o_350_ml__Condicionador_175_ml-Shampoo-Pantene--1-.jpg?v=637775944349130000"
     },
     {
       "title": "Sabonete Líquido Lux Botanicals Orquídea Negra Refil 200ml",
@@ -882,6 +887,11 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/210193-160-160/7506306244184.jpg?v=637834875547670000"
     },
     {
+      "title": "Creme Dental Close Up Triple Hortelã 70g",
+      "price": "R$ 2,79",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/162909-160-160/1495224.jpg?v=637210602554170000"
+    },
+    {
       "title": "Sabonete Líquido Antibacteriano Protex Erva Doce 250ml",
       "price": "R$ 17,39",
       "image": "https://comper.vteximg.com.br/arquivos/ids/200087-160-160/7891024115848.jpg?v=637701631979730000"
@@ -893,13 +903,38 @@
     },
     {
       "title": "Hidratante Corporal Nivea Milk Pele Seca a Extrasseca 400ml",
-      "price": "R$ 17,90",
+      "price": "R$ 14,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/232406-160-160/4005808315697_1.jpg?v=638410118959030000"
+    },
+    {
+      "title": "Creme Dental Colgate Total 12 Advanced Fresh 90g",
+      "price": "R$ 7,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/211121-160-160/7891024135310_2.jpg?v=637860513267930000"
     },
     {
       "title": "Creme Dental Colgate MPA Menta Refrescante 180g",
       "price": "R$ 8,59",
       "image": "https://comper.vteximg.com.br/arquivos/ids/211541-160-160/5207.jpg?v=637880577986470000"
+    },
+    {
+      "title": "Desodorante em Creme Dove Feminino Sérum Niacinamida Previne Escurecimento 50g",
+      "price": "R$ 14,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246525-160-160/2954087.jpg?v=638714282139000000"
+    },
+    {
+      "title": "Desodorante em Creme Dove Feminino Sérum Vitamina E Hipoalergênico Previne Irritação 50g",
+      "price": "R$ 17,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246524-160-160/2954079.jpg?v=638714281715730000"
+    },
+    {
+      "title": "Desodorante em Creme Dove Feminino Sérum Vitamina E Creme Hidratante Reparação Diária 50g",
+      "price": "R$ 14,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246523-160-160/2954060.jpg?v=638714280748800000"
+    },
+    {
+      "title": "Creme Dental Sorriso Tripla Limpeza Completa 140g | Com 3 Unidades",
+      "price": "R$ 12,85",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246491-160-160/2949245.jpg?v=638714255637430000"
     },
     {
       "title": "Creme Dental Sorriso Tripla Limpeza Completa 70g Leve 12 Pague 10 Unidades",
@@ -908,8 +943,13 @@
     },
     {
       "title": "Kit Elseve Glycolic Gloss Shampoo 375ml + Condicionador 170ml",
-      "price": "R$ 29,99",
+      "price": "R$ 19,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/234451-160-160/2940884_7908615085418_SH.375ML-COND.170ML-ELSEVE-GLYCOLIC-.jpg?v=638461069111800000"
+    },
+    {
+      "title": "Fralda Geriátrica Bem Estar Cotidian Tamanho M | Com 18 Unidades",
+      "price": "R$ 62,35",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246457-160-160/2934310.jpg?v=638714224616070000"
     },
     {
       "title": "Condicionador Elseve Glycolic Gloss 200ml",
@@ -930,52 +970,12 @@
       "title": "Creme de Tratamento Elseve Glycolic Gloss Antiporosidade 300g",
       "price": "R$ 20,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/234429-160-160/2928604_7908615053110_CR.TRAT.ELSEVE-GLYCOLIC-300G-ANTIPOROSIDADE.jpg?v=638461066816670000"
-    },
-    {
-      "title": "Creme de Pentear Elseve Glycolic Gloss 250ml",
-      "price": "R$ 18,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/234428-160-160/2928574_7908615059983_CR.PENTEAR-ELSEVE-GLYCOLIC-250ML-.jpg?v=638461066743600000"
-    },
-    {
-      "title": "Sérum Capilar Dove Hidratação 110ml",
-      "price": "R$ 46,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245369-160-160/2925443.jpg?v=638699591462200000"
-    },
-    {
-      "title": "Creme para Tratamento Dove 10 em 1 Reconstrução 270g",
-      "price": "R$ 59,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245366-160-160/2925184.jpg?v=638699587865400000"
-    },
-    {
-      "title": "Sérum Capilar Tresemmé Brilho Lamelar 170ml",
-      "price": "R$ 29,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245365-160-160/2925087.jpg?v=638699586356430000"
-    },
-    {
-      "title": "Sabonete Líquido Lux Essências do Brasil Bromélia 300ml",
-      "price": "R$ 11,38",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245306-160-160/2910934.jpg?v=638699522293370000"
-    },
-    {
-      "title": "Creme para Tratamento Dove 10 em 1 Nutrição 270g",
-      "price": "R$ 59,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245305-160-160/2910756.jpg?v=638699521418230000"
-    },
-    {
-      "title": "Creme para Tratamento Dove 10 em 1 Brilho 270g",
-      "price": "R$ 59,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245304-160-160/2910730.jpg?v=638699520709230000"
-    },
-    {
-      "title": "Creme para Tratamento Dove 10 em 1 Hidratação 270g",
-      "price": "R$ 59,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245303-160-160/2910586.jpg?v=638699520001070000"
     }
   ],
   "hortifruti": [
     {
       "title": "Cenoura kg",
-      "price": "R$ 0,75",
+      "price": "R$ 0,90",
       "image": "https://comper.vteximg.com.br/arquivos/ids/198248-160-160/631744.jpg?v=637686293305830000"
     },
     {
@@ -985,7 +985,7 @@
     },
     {
       "title": "Banana Nanica Kg",
-      "price": "R$ 1,99",
+      "price": "R$ 2,49",
       "image": "https://comper.vteximg.com.br/arquivos/ids/198259-160-160/631612.jpg?v=637686295777830000"
     },
     {
@@ -995,8 +995,13 @@
     },
     {
       "title": "Batata Lavada",
-      "price": "R$ 1,19",
+      "price": "R$ 1,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/181072-160-160/206873.jpg?v=637436488141600000"
+    },
+    {
+      "title": "Chuchu KG",
+      "price": "R$ 1,44",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/166672-160-160/635243_1.jpg?v=637224418219330000"
     },
     {
       "title": "Abobrinha Italiana KG",
@@ -1005,13 +1010,18 @@
     },
     {
       "title": "Abacaxi",
-      "price": "R$ 7,98",
+      "price": "R$ 8,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/159995-160-160/632112.jpg?v=637210530848600000"
     },
     {
       "title": "Manga Tommy KG",
-      "price": "R$ 1,09",
+      "price": "R$ 2,08",
       "image": "https://comper.vteximg.com.br/arquivos/ids/198253-160-160/631949.jpg?v=637686294623530000"
+    },
+    {
+      "title": "Manga Palmer",
+      "price": "R$ 2,27",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/181053-160-160/631930_1.jpg?v=637436416856270000"
     },
     {
       "title": "Limão Tahiti Kg",
@@ -1020,7 +1030,7 @@
     },
     {
       "title": "Batata Doce Kg",
-      "price": "R$ 1,75",
+      "price": "R$ 2,64",
       "image": "https://comper.vteximg.com.br/arquivos/ids/181069-160-160/631671_1.jpg?v=637436487962970000"
     },
     {
@@ -1039,9 +1049,24 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/219293-160-160/7898057770976.jpg?v=638106774128170000"
     },
     {
+      "title": "Uva Cumbuca Crimson 500g",
+      "price": "R$ 9,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/156306-160-160/978787.jpg?v=637210437139100000"
+    },
+    {
+      "title": "Tomate Cereja Machadinho 450g",
+      "price": "R$ 9,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/165888-160-160/966355_1.jpg?v=637224395785330000"
+    },
+    {
       "title": "Uva Cumbuca Thompson 500g",
-      "price": "R$ 12,98",
+      "price": "R$ 11,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/156303-160-160/964506.jpg?v=637210437070000000"
+    },
+    {
+      "title": "Alface Crespa Unidade",
+      "price": "R$ 3,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/219337-160-160/956295.jpg?v=638107636605670000"
     },
     {
       "title": "Maçã Fuji kg",
@@ -1055,7 +1080,7 @@
     },
     {
       "title": "Tomate Italiano",
-      "price": "R$ 6,00",
+      "price": "R$ 7,50",
       "image": "https://comper.vteximg.com.br/arquivos/ids/181084-160-160/716430_1.jpg?v=637436560320000000"
     },
     {
@@ -1064,44 +1089,24 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/219324-160-160/712302.jpg?v=638107631577670000"
     },
     {
-      "title": "Pera Importada KG",
-      "price": "R$ 3,00",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/181050-160-160/683590_1.jpg?v=637436416665430000"
-    },
-    {
       "title": "Maçã Fischer Turma da Mônica Pacote 1kg.",
       "price": "R$ 13,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/160083-160-160/654922.jpg?v=637210532755400000"
     },
     {
-      "title": "Chuchu KG",
-      "price": "R$ 1,44",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/166672-160-160/635243_1.jpg?v=637224418219330000"
-    },
-    {
       "title": "Abóbora Kabotia KG",
-      "price": "R$ 3,96",
+      "price": "R$ 5,58",
       "image": "https://comper.vteximg.com.br/arquivos/ids/185551-160-160/633151.jpg?v=637503031314470000"
     },
     {
       "title": "Ameixa Importada kg",
-      "price": "R$ 1,54",
+      "price": "R$ 1,65",
       "image": "https://comper.vteximg.com.br/arquivos/ids/208007-160-160/632147.jpg?v=637800061329500000"
     },
     {
-      "title": "Pepino Japonês KG",
-      "price": "R$ 1,62",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/182005-160-160/632066-PEPINO-JAPONES.jpg?v=637466541319570000"
-    },
-    {
       "title": "Pepino Comum KG",
-      "price": "R$ 2,65",
+      "price": "R$ 2,27",
       "image": "https://comper.vteximg.com.br/arquivos/ids/198251-160-160/632058.jpg?v=637686293887500000"
-    },
-    {
-      "title": "Manga Palmer",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/181053-160-160/631930_1.jpg?v=637436416856270000"
     },
     {
       "title": "Mamão Papaya KG",
@@ -1114,24 +1119,19 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/158551-160-160/631868.jpg?v=637210493338470000"
     },
     {
+      "title": "Goiaba Vermelha",
+      "price": "R$ 6,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/198232-160-160/631833.jpg?v=637686284115300000"
+    },
+    {
       "title": "Couve Folha Maço",
       "price": "R$ 3,29",
       "image": "https://comper.vteximg.com.br/arquivos/ids/158550-160-160/631809.jpg?v=637210493318930000"
     },
     {
-      "title": "Beterraba KG",
-      "price": "R$ 1,97",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/198243-160-160/631698.jpg?v=637686292521330000"
-    },
-    {
-      "title": "Berinjela KG",
-      "price": "R$ 1,34",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/181070-160-160/631680_1.jpg?v=637436487979100000"
-    },
-    {
-      "title": "Repolho Liso Verde",
-      "price": "R$ 5,17",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/167217-160-160/631531_1.jpg?v=637224433759870000"
+      "title": "Pera Importada KG",
+      "price": "Preço indisponível",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/181050-160-160/683590_1.jpg?v=637436416665430000"
     }
   ],
   "infantil": [
@@ -1139,6 +1139,11 @@
       "title": "Farinha Láctea Nestlé Tradicional 210g",
       "price": "R$ 7,59",
       "image": "https://comper.vteximg.com.br/arquivos/ids/240217-160-160/7891000099032-FarinhalacteaNESTLE210g.jpg?v=638605573603670000"
+    },
+    {
+      "title": "Cereal Matinal Nestlé Mucilon Seleção da Natureza Aveia, Quinoa e Cevada 100g",
+      "price": "R$ 9,29",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/246456-160-160/2931486.jpg?v=638714223907100000"
     },
     {
       "title": "Sabonete Líquido Infantil Protex Baby Lavanda Refil 180ml",
@@ -1204,11 +1209,6 @@
       "title": "Sabonete Líquido Infantil Palmolive Kids Pump 220ml",
       "price": "R$ 21,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/243059-160-160/2737507.jpg?v=638669301692630000"
-    },
-    {
-      "title": "Snack Nestlé Mucilon Meu Primeiro Lanchinho Tomate 35g",
-      "price": "R$ 4,49",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/238087-160-160/7891000320280-SnackMucilonTomate35g-1.jpg?v=638537346624930000"
     },
     {
       "title": "Snack Nestlé Mucilon Meu Primeiro Lanchinho Milho 35g",
@@ -1303,11 +1303,6 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/193457-160-160/7897664130043.jpg?v=637644584085930000"
     },
     {
-      "title": "Limpador Multiuso Veja Original 500ml",
-      "price": "R$ 6,69",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/200374-160-160/7891035210006.jpg?v=637702649706500000"
-    },
-    {
       "title": "Água Sanitária Qboa 2 Litros",
       "price": "R$ 7,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/178690-160-160/agua-Sanitaria-Qboa-2L.jpg?v=637364619897370000"
@@ -1319,23 +1314,18 @@
     },
     {
       "title": "Detergente Líquido Ypê Neutro 500ml",
-      "price": "R$ 2,59",
+      "price": "R$ 1,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/187801-160-160/-2--7896098900208.jpg?v=637545377763970000"
     },
     {
       "title": "Sabão em Pó Minuano Máxima Limpeza Caixa 800g",
-      "price": "R$ 6,49",
+      "price": "R$ 6,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/222789-160-160/7908324403268_1_3_1200_72_RGB.jpg?v=638179523341630000"
     },
     {
       "title": "Sabão em Barra Minuano Glicerinado Multiuso Neutro 900g Com 5 Unidades",
-      "price": "R$ 10,90",
+      "price": "R$ 6,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/228677-160-160/7908324402865_1_3_1200_72_RGB.jpg?v=638328181368600000"
-    },
-    {
-      "title": "Sabão em Pó Tixan Ypê Primavera Caixa 800g",
-      "price": "R$ 11,89",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/219295-160-160/7896098909744_99_3_1200_72_RGB.jpg?v=638106776679400000"
     },
     {
       "title": "Sabão em Pó Omo Ativo Concentrado Lavanda 1,6kg",
@@ -1358,11 +1348,6 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/169713-160-160/produtos-sku-2450640.jpg?v=637268767029830000"
     },
     {
-      "title": "Limpador Multiuso Veja Power Fusion Laranja 500ml",
-      "price": "R$ 9,89",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/159946-160-160/2229234.jpg?v=637210529273100000"
-    },
-    {
       "title": "Sabão em Pó Omo Lavagem Perfeita 800g",
       "price": "R$ 14,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/200172-160-160/7891150064317.jpg?v=637701735301770000"
@@ -1374,23 +1359,8 @@
     },
     {
       "title": "Inseticida SBP Aerossol Proteção Imediata Eucalipto 380ml Embalagem Econômica",
-      "price": "R$ 29,15",
+      "price": "R$ 10,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/162860-160-160/1587420.jpg?v=637210601285470000"
-    },
-    {
-      "title": "Amaciante para Roupas Ypê Aconchego Leve 5 Litros Pague 4 Litros",
-      "price": "R$ 18,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/210395-160-160/7896098905432.jpg?v=637838333632670000"
-    },
-    {
-      "title": "Esponja 3M Tinindo Multiuso Leve 4 Pague 3 Unidades",
-      "price": "R$ 5,51",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/162924-160-160/1519093.jpg?v=637210602920330000"
-    },
-    {
-      "title": "Esponja 3M Scotch Brite Não Risca Laranja Leve 3 Pague 2 Unidades",
-      "price": "R$ 9,75",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/210352-160-160/7891040204465.jpg?v=637838306726700000"
     },
     {
       "title": "Limpador Perfumado Veja Lavanda 2 Litros",
@@ -1408,9 +1378,14 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/210368-160-160/7896098900994.jpg?v=637838316432130000"
     },
     {
-      "title": "Detergente Líquido Oeste Limão 500ml",
-      "price": "R$ 1,95",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/179685-160-160/604364-Detergente-Liquido-Oeste-Limao-500ml.jpg?v=637388199450830000"
+      "title": "Amaciante para Roupas Concentrado Comfort Intense Cuidado Essencial 1 Litro",
+      "price": "R$ 28,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/189677-160-160/7891150028944.jpg?v=637619691816870000"
+    },
+    {
+      "title": "Sabão Líquido Omo Lavagem Perfeita Frasco 3 Litros",
+      "price": "R$ 49,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/175997-160-160/7891150020689_0.jpg?v=637293838996270000"
     },
     {
       "title": "Limpador para Banheiro Veja X 14 Tira Limo Cloro Ativo Squeeze 500ml",
@@ -1418,9 +1393,19 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/178831-160-160/Limpador-para-Banheiro-Veja-X-14-Tira-Limo-Cloro-Ativo-Squeeze-500ml.jpg?v=637364620386770000"
     },
     {
-      "title": "Água Sanitária Qboa 5 Litros",
-      "price": "R$ 17,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/178732-160-160/agua-Sanitaria-Qboa-5L.jpg?v=637364620054030000"
+      "title": "Limpador Multiuso Veja Original 500ml",
+      "price": "R$ 6,69",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/200374-160-160/7891035210006.jpg?v=637702649706500000"
+    },
+    {
+      "title": "Água Sanitária Qboa 1 Litro",
+      "price": "R$ 5,39",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/178689-160-160/agua-Sanitaria-Qboa-1L.jpg?v=637364619894000000"
+    },
+    {
+      "title": "Detergente Líquido Limpol Coco 500ml",
+      "price": "R$ 2,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/163993-160-160/26328_1.jpg?v=637224341795970000"
     },
     {
       "title": "Sabão em Barra Ypê Neutro Original 900g Com 5 Unidades",
@@ -1428,14 +1413,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/216306-160-160/7896098905906_99_3_1200_72_RGB.jpg?v=637992045528770000"
     },
     {
-      "title": "Amaciante para Roupas Concentrado Downy Brisa de Verão 500ml",
-      "price": "R$ 12,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/242921-160-160/2692171.jpg?v=638666093802670000"
-    },
-    {
-      "title": "Sabão Líquido Ola Roupas Delicadas Original 1,75 Litro",
-      "price": "R$ 37,85",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/210690-160-160/7509546667850.jpg?v=637844170175170000"
+      "title": "Lava-Roupas em Pó Omo Sanitiza e Higieniza 1,6kg",
+      "price": "R$ 24,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/216575-160-160/7891150072152_0.jpg?v=637999732011230000"
     },
     {
       "title": "Desinfetante Cif Multiuso + Antibac Squeeze 500ml",
@@ -1456,9 +1436,34 @@
       "title": "Sabão Líquido Omo Bebê Roupas Finas e Delicadas 900ml",
       "price": "R$ 18,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/169438-160-160/produtos-sku-2537621.jpg?v=637268764066970000"
+    },
+    {
+      "title": "Limpador Perfumado Coala Talco 120ml",
+      "price": "R$ 15,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/168880-160-160/produtos-sku-2514915.jpg?v=637268754775330000"
+    },
+    {
+      "title": "Esponja Esfrebom Diamond Com 3 Unidades",
+      "price": "R$ 8,95",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/189718-160-160/7896001044838.jpg?v=637619740862800000"
+    },
+    {
+      "title": "Detergente em Pó para Máquina de Lavar Louças Finish Powder Advanced em Pote 450g",
+      "price": "R$ 31,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/168251-160-160/7891035024399-Finish-Finish_Detergente_para_Lava_Lou_as_em_P_450g-Site_Comper--1-.jpg?v=637261161871530000"
+    },
+    {
+      "title": "Limpador Multiuso Veja Power Fusion Laranja 500ml",
+      "price": "R$ 9,89",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/159946-160-160/2229234.jpg?v=637210529273100000"
     }
   ],
   "matinais": [
+    {
+      "title": "Achocolatado Em Pó Nescau Cilindro 370g",
+      "price": "R$ 7,59",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/237857-160-160/image-to-upload-0.jpg?v=638532961879530000"
+    },
     {
       "title": "Café do Sitio 100% Arábico Vácuo 500g",
       "price": "R$ 25,99",
@@ -1466,17 +1471,17 @@
     },
     {
       "title": "Café do Sitio 100% Arábico Pacote 500g",
-      "price": "R$ 25,99",
+      "price": "R$ 19,89",
       "image": "https://comper.vteximg.com.br/arquivos/ids/166197-160-160/624314_1.jpg?v=637224404805400000"
     },
     {
-      "title": "Achocolatado Em Pó Nescau Cilindro 370g",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237857-160-160/image-to-upload-0.jpg?v=638532961879530000"
+      "title": "Achocolatado Pó Toddy Original Pote 750g Embalagem Econômica",
+      "price": "R$ 16,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/200391-160-160/7892840819170_99_3_1200_72_RGB.jpg?v=637703537476230000"
     },
     {
       "title": "Achocolatado em Pó Nescau 2.0 Sachê 1,02kg",
-      "price": "R$ 25,99",
+      "price": "R$ 34,75",
       "image": "https://comper.vteximg.com.br/arquivos/ids/227332-160-160/7891000265505---Achocolatado-em-Po-NESCAU-1---1.jpg?v=638304001816630000"
     },
     {
@@ -1495,13 +1500,8 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/227244-160-160/7891000102626---Aveia-em-flocos-NESTLE-finos-170g---1.jpg?v=638304001751230000"
     },
     {
-      "title": "Aveia Yoki em Flocos Finos 500g",
-      "price": "R$ 9,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/220258-160-160/7891095100941_11_1_1200_72_RGB.jpg?v=638138993388370000"
-    },
-    {
       "title": "Achocolatado Líquido Pirakids 200ml",
-      "price": "R$ 0,98",
+      "price": "R$ 1,45",
       "image": "https://comper.vteximg.com.br/arquivos/ids/234072-160-160/7898215151807_99_10_1200_72_SRGB.jpg?v=638452583238600000"
     },
     {
@@ -1521,32 +1521,32 @@
     },
     {
       "title": "Cápsula de Café Nescafé Dolce Gusto Caffe Matinal 80g Com 10 Cápsulas",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/240332-160-160/7891000621981-CafeemCapsulaNESCAFEDOLCEGUSTOCaffeMatinal10Capsulas80g-1.jpg?v=638609624828970000"
     },
     {
       "title": "Cápsula de Café Nescafé Dolce Gusto Cappuccino Doce de Leite 170g Com 10 Cápsulas",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/240189-160-160/7891000877456-CafeemCapsulaNESCAFEDOLCEGUSTOCappuccinoDocedeleite10Capsulas170g-1.jpg?v=638605560272630000"
     },
     {
       "title": "Cápsula de Café Nescafé Dolce Gusto Latte Macchiato 112,5g Com 10 Cápsulas",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/240197-160-160/7891000388655-CafeemCapsulaNESCAFEDOLCEGUSTOLatteMacchiato10Capsulas1125g-1.jpg?v=638605562857300000"
     },
     {
       "title": "Cápsula de Chocolate Nescafé Dolce Gusto Chococino 160g Com 10 Cápsulas",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/224756-160-160/7891000355886_99_1_1200_72_RGB.jpg?v=638241603329970000"
     },
     {
       "title": "Cápsula de Chocolate Nescafé Dolce Gusto Nescau 170g Com 10 Cápsulas",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/240306-160-160/7891000243688-AchocolatadoemCapsulaNESCAFEDOLCEGUSTOSaborNescau10Capsulas-1.jpg?v=638609623528170000"
     },
     {
       "title": "Chá em Cápsula Natures Heart Tea Hibiscus Pink Lemonade 10 Cápsulas 60g",
-      "price": "R$ 27,99",
+      "price": "R$ 18,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/224749-160-160/2850907-7891000912423_99_1_1200_72_RGB.jpg?v=638241599826830000"
     },
     {
@@ -1581,13 +1581,8 @@
     },
     {
       "title": "Cereal Matinal Kellogg's Sucrilhos 240g",
-      "price": "R$ 7,99",
+      "price": "R$ 6,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/214137-160-160/7896004007427_2.jpg?v=637941113914400000"
-    },
-    {
-      "title": "Achocolatado Pó Toddy Original Pote 750g Embalagem Econômica",
-      "price": "R$ 16,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/200391-160-160/7892840819170_99_3_1200_72_RGB.jpg?v=637703537476230000"
     },
     {
       "title": "Café Solúvel Nescafé Intensidade Máxima Vidro 160g",
@@ -1618,18 +1613,18 @@
       "title": "Cereal Matinal Integral com Flocos de Trigo, Aveia, Arroz e Milho sem Adição de Açúcar Nestlé Nesfit Caixa 220g",
       "price": "R$ 15,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/189938-160-160/7891000288801.jpg?v=637620511708600000"
+    },
+    {
+      "title": "Café Solúvel 3 Corações com Leite 20g",
+      "price": "R$ 2,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/190693-160-160/7896005807521.jpg?v=637625805898330000"
     }
   ],
   "mercearia": [
     {
       "title": "Creme de Leite Piracanjuba 200g",
-      "price": "R$ 3,89",
+      "price": "R$ 2,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/234117-160-160/7898215151784_99_10_3000_300_SRGB.jpg?v=638453291357470000"
-    },
-    {
-      "title": "Óleo de Soja Liza 900ml",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/210975-160-160/7896036090244.jpg?v=637859073776230000"
     },
     {
       "title": "Sal Refinado Lebre 1kg",
@@ -1637,18 +1632,18 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/216125-160-160/10537.jpg?v=637986989613170000"
     },
     {
-      "title": "Farofa de Mandioca Yoki Tradicional 400g",
-      "price": "R$ 9,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/229308-160-160/2858428_20230426135117.jpg?v=638352204137900000"
+      "title": "Milho para Pipoca Yoki Premium 400g",
+      "price": "R$ 5,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/232294-160-160/2894246.jpg?v=638406784059570000"
     },
     {
-      "title": "Rosquinha Mabel Coco 600g",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/235232-160-160/7896071025638_99_1_3000_300_SRGB.jpg?v=638479349960900000"
+      "title": "Extrato de Tomate Elefante Só Tomate Pote 300g",
+      "price": "R$ 8,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/235230-160-160/7896036000724-Extrato-de-Tomate-Elefante-So-Tomate-Pote-300g-1.jpg?v=638479349862000000"
     },
     {
       "title": "Biscoito Cream Cracker Marilan Especial 350g",
-      "price": "R$ 4,99",
+      "price": "R$ 5,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/214334-160-160/7896003738629_99_3_1200_72_RGB.jpg?v=637945457512470000"
     },
     {
@@ -1667,13 +1662,8 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/168257-160-160/7896102500608-Quero-Milho_Verde_Quero_Lata_170g-Site_Comper--1-.jpg?v=637261161896200000"
     },
     {
-      "title": "Açúcar Cristal Imperial 5kg",
-      "price": "R$ 15,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/164278-160-160/1184393_1.jpg?v=637224349675200000"
-    },
-    {
       "title": "Leite Itambé Integral Lata 400g",
-      "price": "R$ 16,99",
+      "price": "R$ 13,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/189322-160-160/7896051130284.jpg?v=637613755379470000"
     },
     {
@@ -1683,8 +1673,13 @@
     },
     {
       "title": "Feijão Carioca Kicaldo 1kg",
-      "price": "R$ 4,99",
+      "price": "R$ 5,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/164317-160-160/606375_1.jpg?v=637224350731200000"
+    },
+    {
+      "title": "Azeite de Oliva Borges Extra Virgem Vidro 500ml",
+      "price": "R$ 36,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/210983-160-160/8410179100036.jpg?v=637859088208670000"
     },
     {
       "title": "Leite Ninho Forti+ Integral 1 Litro",
@@ -1707,9 +1702,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/214003-160-160/210862.jpg?v=637940964723200000"
     },
     {
-      "title": "Leite Condensado Italac Semidesnatado 395g",
+      "title": "Leite Condensado Semidesnatado Piracanjuba 395g",
       "price": "R$ 5,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/176591-160-160/125083.jpg?v=637298333489800000"
+      "image": "https://comper.vteximg.com.br/arquivos/ids/234120-160-160/7898215152002_99_10_3000_300_SRGB.jpg?v=638453291580830000"
     },
     {
       "title": "Creme de Leite Italac 200g",
@@ -1722,9 +1717,14 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/220247-160-160/7891021006125_33_1_1200_72_RGB.jpg?v=638138991047570000"
     },
     {
-      "title": "Milho para Pipoca Yoki Premium 400g",
-      "price": "R$ 4,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/232294-160-160/2894246.jpg?v=638406784059570000"
+      "title": "Óleo de Soja Liza 900ml",
+      "price": "R$ 8,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/210975-160-160/7896036090244.jpg?v=637859073776230000"
+    },
+    {
+      "title": "Farofa de Mandioca Yoki Tradicional 400g",
+      "price": "R$ 8,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/229308-160-160/2858428_20230426135117.jpg?v=638352204137900000"
     },
     {
       "title": "Batata Frita Pringles Queijo 109g",
@@ -1732,9 +1732,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/224280-160-160/7896004006284_99_1_1200_72_RGB.jpg?v=638225340821330000"
     },
     {
-      "title": "Extrato de Tomate Elefante Só Tomate Pote 300g",
+      "title": "Extrato de Tomate Elefante Pote 300g",
       "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/235230-160-160/7896036000724-Extrato-de-Tomate-Elefante-So-Tomate-Pote-300g-1.jpg?v=638479349862000000"
+      "image": "https://comper.vteximg.com.br/arquivos/ids/235229-160-160/7896036000717-Extrato-de-Tomate-Elefante-Pote-300g-1.jpg?v=638479349779000000"
     },
     {
       "title": "Chocolate Lacta Duo Laka Diamante Negro Branco e ao Leite 80g",
@@ -1742,14 +1742,9 @@
       "image": "https://comper.vteximg.com.br/arquivos/ids/231085-160-160/7622210575630-Chocolate_branco_e_ao_leite_Diamante_Negro_Laka_80g-site_1000x1000--1-.jpg?v=638391982224430000"
     },
     {
-      "title": "Chocolate Garoto ao Leite 80g",
-      "price": "R$ 5,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/226795-160-160/7891008123975---Chocolate-ao-Leite-GAROTO-Tablete-80g.jpg?v=638304001229770000"
-    },
-    {
-      "title": "Farinha de Milho Dona Clara Flocão Premium 500g",
-      "price": "R$ 1,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/218664-160-160/7896490288775_33_1_1200_72_RGB.jpg?v=638076637002970000"
+      "title": "Rosquinha Mabel Coco 600g",
+      "price": "R$ 7,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/235232-160-160/7896071025638_99_1_3000_300_SRGB.jpg?v=638479349960900000"
     },
     {
       "title": "Biscoito Fortaleza Maizena 350g",
@@ -1768,125 +1763,185 @@
     },
     {
       "title": "Milho Verde Fugini Sachê 170g",
-      "price": "R$ 3,79",
+      "price": "R$ 2,29",
       "image": "https://comper.vteximg.com.br/arquivos/ids/210981-160-160/7897517209544.jpg?v=637859085670830000"
-    },
-    {
-      "title": "Amendoim Japonês Elma Chips 145g",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214331-160-160/7892840814724_33_1_1200_72_RGB.jpg?v=637945455836100000"
     },
     {
       "title": "Batata Palha Yoki Extra Fina 100g",
       "price": "R$ 9,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/182524-160-160/7891095031122.jpg?v=637492555574100000"
+    },
+    {
+      "title": "Bombom Garoto Sortidos Garotices 250g",
+      "price": "R$ 13,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/243637-160-160/7891008116632-BombomGAROTOSortidoCaixa250g-1.jpg?v=638676597628030000"
+    },
+    {
+      "title": "Goma Úmida para Tapioca Q Massa Tradicional 600g",
+      "price": "R$ 5,59",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/196571-160-160/foto-em-breve.jpg?v=637672201878930000"
     }
   ],
   "padaria": [
     {
       "title": "Pão Francês kg",
-      "price": "R$ 1,44",
+      "price": "R$ 0,96",
       "image": "https://comper.vteximg.com.br/arquivos/ids/192118-160-160/867535-pao-frances.jpg?v=637635206395630000"
     },
     {
-      "title": "Pão de Forma Pullman Tradicional 480g",
-      "price": "R$ 10,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/210077-160-160/7896002360326.jpg?v=637832237118000000"
-    },
-    {
       "title": "Pão de Forma Bauducco Tradicional 390g",
-      "price": "R$ 8,99",
+      "price": "R$ 5,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/228841-160-160/2743680-7891962064048_99_6_3000_300_RGB.jpg?v=638334041259230000"
     },
     {
-      "title": "Pão de Forma Wickbold Do Forno 100% Integral 500g",
-      "price": "R$ 13,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/217270-160-160/7896066301457_1_1_1200_72_RGB.jpg?v=638023871078570000"
+      "title": "Pão de Forma Pullman Tradicional 480g",
+      "price": "R$ 8,89",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/210077-160-160/7896002360326.jpg?v=637832237118000000"
     },
     {
       "title": "Bisnaguinha Pullman Bisnaguito 300g",
-      "price": "R$ 11,38",
+      "price": "R$ 5,98",
       "image": "https://comper.vteximg.com.br/arquivos/ids/225609-160-160/623466_1_bisnaguinha-pullman-300g.jpg?v=638271962766130000"
     },
     {
-      "title": "Torrada Bauducco Integral 284g Com 2 Unidades",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/157866-160-160/2194112.jpg?v=637210476208200000"
-    },
-    {
-      "title": "Pão de Forma Visconti Tradicional 400g",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/171801-160-160/1904418.jpg?v=637281951589600000"
-    },
-    {
-      "title": "Pão de Alho Santa Massa Tradicional 400g",
-      "price": "R$ 18,39",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/203912-160-160/7898067340404.jpg?v=637769161558630000"
-    },
-    {
-      "title": "Pão de Forma Seven Boys Tradicional 450g",
-      "price": "R$ 9,49",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/189527-160-160/7891193010074.jpg?v=637618892060170000"
-    },
-    {
-      "title": "Bisnaguinha Seven Boys Play! Original 300g",
-      "price": "R$ 8,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/189522-160-160/7891193010012.jpg?v=637618885348200000"
-    },
-    {
-      "title": "Pão para Hambúrguer Pullman Brioche 520g",
-      "price": "R$ 18,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/184483-160-160/7896002304184_0.jpg?v=637497040864000000"
-    },
-    {
       "title": "Torrada Bauducco Tradicional 284g",
-      "price": "R$ 8,99",
+      "price": "R$ 9,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/179854-160-160/2194139-Torrada-Bauducco-Tradicional-284g.jpg?v=637388200292900000"
     },
     {
-      "title": "Torrada Bauducco Tradicional 142g",
-      "price": "R$ 4,65",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/158458-160-160/2194082.jpg?v=637210490955770000"
+      "title": "Pão de Forma Visconti Tradicional 400g",
+      "price": "R$ 4,48",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/171801-160-160/1904418.jpg?v=637281951589600000"
     },
     {
-      "title": "Panettone Santa Edwiges Premium com Gotas de Chocolate 400g",
-      "price": "R$ 16,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/201966-160-160/1602179-Panettone-Edwiges-Premium-com-Gotas-de-Chocolate-400g.jpg?v=637717314151600000"
-    },
-    {
-      "title": "Panettone Santa Edwiges Zero Açúcar com Frutas 400g",
-      "price": "R$ 29,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/201962-160-160/1602136-Panettone-Edwiges-Zero-Acucar-frutas-400g.jpg?v=637717313658100000"
+      "title": "Pão de Forma Pullman Artesano Integral 500g",
+      "price": "R$ 12,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/212636-160-160/7896002303460.jpg?v=637904676497000000"
     },
     {
       "title": "Pão de Forma Pullman Artesano 500g",
-      "price": "R$ 14,99",
+      "price": "R$ 11,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/207376-160-160/7896002302197.jpg?v=637788254474900000"
     },
     {
-      "title": "Pão de Forma Nutrella Supreme 100% Integral 450g",
-      "price": "R$ 22,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/212887-160-160/7896002300360.jpg?v=637913536221770000"
+      "title": "Pão Tortilha Pullman Rap 10 Fit 297g",
+      "price": "R$ 10,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/214926-160-160/7896002364546.jpg?v=637959283013370000"
     },
     {
-      "title": "Pão de Leite Seven Boys 450g",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/178171-160-160/7891193010081_1_1_1200_72_RGB.jpg?v=637344826891170000"
+      "title": "Bisnaguinha Seven Boys Play! Original 300g",
+      "price": "R$ 8,79",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/189522-160-160/7891193010012.jpg?v=637618885348200000"
+    },
+    {
+      "title": "Torrada Bauducco Cereale Integral Toast Multi Cereais 128g",
+      "price": "R$ 5,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/198770-160-160/7891962058719.jpg?v=637687072573370000"
+    },
+    {
+      "title": "Pão de Alho Zinho Bolinha Tradicional 300g",
+      "price": "R$ 11,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/203914-160-160/7898337980064.jpg?v=637769161996000000"
+    },
+    {
+      "title": "Panettone Romanato Frutas Cristalizadas 400g",
+      "price": "R$ 13,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/216927-160-160/1060406_7898943316578_PANETTONE-ROMANATO-400G-FRUTAS-CRISTALIZADAS.jpg?v=638011104972330000"
+    },
+    {
+      "title": "Pão de Forma Pullman Integral 500g",
+      "price": "R$ 10,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/191247-160-160/7896002300148.jpg?v=637630787799400000"
+    },
+    {
+      "title": "Panettone Romanato Vegattone Gotas Chocolate 400g",
+      "price": "R$ 35,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/245051-160-160/2972263.jpg?v=638693715560500000"
+    },
+    {
+      "title": "Panettone Romanato Vegattone Frutas Cristalizadas 400g",
+      "price": "R$ 35,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/245049-160-160/2972247.jpg?v=638693714337800000"
+    },
+    {
+      "title": "Panettone Romanato Triplo Chocolate 580g",
+      "price": "R$ 45,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/245048-160-160/7898633334240.jpg?v=638693713453730000"
+    },
+    {
+      "title": "Panettone Santa Edwiges Frutas Especiais 400g",
+      "price": "R$ 11,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/229290-160-160/2904934_7896064209663_PANETONE-STA-EDWIGES-400G-FRUT.ESP..jpg?v=638352186712570000"
+    },
+    {
+      "title": "Panettone Santa Edwiges Gourmet Gotas de Chocolate Belga 400g",
+      "price": "R$ 12,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/229289-160-160/2904926_7896064209656_PANETONE-STA-EDWIGES-400G-CHOC.BELG.jpg?v=638352186665430000"
+    },
+    {
+      "title": "Pão de Forma Pullman Artesano Australiano 500g",
+      "price": "R$ 12,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/244454-160-160/2869543.jpg?v=638681566446600000"
+    },
+    {
+      "title": "Bolinho Bauducco Chocolate e Baunilha 40g",
+      "price": "R$ 1,98",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/217663-160-160/7891962067346_99_1_1200_72_RGB.jpg?v=638046508547000000"
+    },
+    {
+      "title": "Pão de Forma Nutrella Cranberry, Quinoa e Hibisco 350g",
+      "price": "R$ 14,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/212785-160-160/2764296_2.jpg?v=637910920703370000"
+    },
+    {
+      "title": "Pão de Forma Nutrella Semente de Abóbora, Linhaça e Cenoura 350g",
+      "price": "R$ 14,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/212783-160-160/2764288_2.jpg?v=637910920380030000"
+    },
+    {
+      "title": "Pão de Forma Bauducco Integral 390g",
+      "price": "R$ 9,79",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/228840-160-160/2743701-7891962064055_99_6_3000_300_RGB.jpg?v=638334040512930000"
     },
     {
       "title": "Pão de Forma Pullman Artesano Sabor Pão na Chapa 500g",
-      "price": "R$ 16,90",
+      "price": "R$ 12,99",
       "image": "https://comper.vteximg.com.br/arquivos/ids/210072-160-160/7896002310345.jpg?v=637832235777530000"
     },
     {
+      "title": "Panettone Romanato de Frutas Pacote 300g",
+      "price": "R$ 11,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/216945-160-160/2590492_7898633330846_PANETTONE-ROMANATO-300G-FRUTAS-CRISTALIZADAS.jpg?v=638011112056200000"
+    },
+    {
+      "title": "Panetone Romanato Gotas de Chocolate Pacote 300g",
+      "price": "R$ 11,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/216944-160-160/2590484_7898633330853_PANETTONE-ROMANATO-300G-GOTAS-CHOCOLATE.jpg?v=638011111996270000"
+    },
+    {
       "title": "Torrada Bauducco Cereale Integral Azeitona e Ervas 128g",
-      "price": "R$ 6,95",
+      "price": "R$ 5,79",
       "image": "https://comper.vteximg.com.br/arquivos/ids/198772-160-160/7891962058733.jpg?v=637687073785670000"
     },
     {
-      "title": "Torrada Bauducco Multigrãos 284g Com 2 Unidades",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/162211-160-160/2194120.jpg?v=637210585443470000"
+      "title": "Torrada Bauducco Cereale Integral Toast 128g",
+      "price": "R$ 5,79",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/198771-160-160/7891962058726.jpg?v=637687073228670000"
+    },
+    {
+      "title": "Pão de Hot Dog Levz 500g",
+      "price": "R$ 9,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/197531-160-160/7898957583126.jpg?v=637673289988570000"
+    },
+    {
+      "title": "Pão Hambúrguer Levz 500g",
+      "price": "R$ 9,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/197532-160-160/7898957583140.jpg?v=637673290241000000"
+    },
+    {
+      "title": "Pão para Hambúrguer Pullman Brioche 520g",
+      "price": "R$ 15,99",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/184483-160-160/7896002304184_0.jpg?v=637497040864000000"
     }
   ],
   "pet_shop": [
@@ -1977,12 +2032,12 @@
     },
     {
       "title": "Ração para Gatos Friskies Adulto Peixes e Frutos do Mar 3kg",
-      "price": "R$ 49,90",
+      "price": "R$ 69,90",
       "image": "https://comper.vteximg.com.br/arquivos/ids/226352-160-160/7891000069431---NESTLE%C2%AE-PURINA%C2%AE-FRISKIES%C2%AE-Racao-Seca-para-Gatos-Adultos-Peixe-e-Frutos-do-Mar-3kg.jpg?v=638289353319500000"
     },
     {
       "title": "Ração para Gatos Friskies Mix de Carnes 3kg",
-      "price": "R$ 49,90",
+      "price": "R$ 69,90",
       "image": "https://comper.vteximg.com.br/arquivos/ids/227113-160-160/7891000069417---NESTLE%C2%AE-PURINA%C2%AE-FRISKIES%C2%AE-Racao-Seca-para-Gatos-Adultos-Mix-de-Carnes-3kg.jpg?v=638304001624470000"
     },
     {
