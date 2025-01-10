@@ -9,12 +9,14 @@ app.use(cors());
 app.use(express.json());
 
 const port = 5000;
-let info = "";
+
+let info = [];
+
 const DATA_FILE = "scraped_data.json";
 
 // Função de scraping
 async function scrapeSupermarket(url) {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   if (
     url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
@@ -24,7 +26,7 @@ async function scrapeSupermarket(url) {
       await page.goto(url, { waitUntil: "domcontentloaded" });
 
       // Aguardar e fechar o primeiro pop-up
-      await page.waitForSelector("div.app-modal__close", { visible: true });
+      await page.waitForSelector("div.app-modal__close", { visible: false });
       await page.evaluate(() => {
         const element = document.querySelector("div.app-modal__close");
         if (element) {
@@ -93,9 +95,10 @@ async function scrapeSupermarket(url) {
           element.click();
         }
       });
+
       console.log("Último pop-up fechado.");
 
-      // Aguardar a navegação ou atualização da página
+      // Aguardar a navegação ou carregamento após o clique, se necessário
       await page.waitForNavigation({ waitUntil: "networkidle0" });
 
       // Realizar a rolagem da página para baixo
@@ -116,6 +119,13 @@ async function scrapeSupermarket(url) {
           }, 100); // Rolagem a cada 500ms
         });
       });
+
+      await page.waitForSelector("a.pagination__button--next::before", {
+        visible: true,
+      });
+
+      // Clicar no botão "Próxima página"
+      await page.click("a.pagination__button--next::before");
 
       // Extrair dados dos produtos
       const products = await page.evaluate(() => {
@@ -170,6 +180,7 @@ async function scrapeSupermarket(url) {
 
 // Função para realizar scraping diário
 async function performDailyScraping() {
+  console.log(info);
   try {
     const activeCategories = Object.entries(info[2])
       .filter(([key, value]) => value)
@@ -197,6 +208,7 @@ async function performDailyScraping() {
 
 // Adicionar um endpoint para iniciar o scraping manualmente
 app.post("/start-scraping", async (req, res) => {
+  console.log("começando scrape");
   try {
     await performDailyScraping();
     res.send("Scraping manual iniciado e concluído com sucesso.");
@@ -211,7 +223,9 @@ cron.schedule("0 0 * * *", performDailyScraping);
 
 // Rota para receber informações iniciais
 app.post("/info", (req, res) => {
+  console.log("Info antes:", info);
   info = req.body;
+  console.log("Info Depois:", info);
   res.send("Informações recebidas.");
 });
 
