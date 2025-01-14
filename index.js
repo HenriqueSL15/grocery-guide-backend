@@ -7,15 +7,70 @@ const cron = require("node-cron");
 const app = express();
 app.use(cors());
 app.use(express.json());
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const port = 5000;
 
 let info = [];
-
 const DATA_FILE = "scraped_data.json";
+
+// Realizar a rolagem da página para baixo e extrair os dados dos produtos
+async function scrapeAndScroll(page) {
+  const items = [];
+  let scrolled = 0;
+  const distance = 100; // Distância a ser rolada a cada vez
+  const scrollHeight = 11750; // Tamanho total da página para rolar até o final
+
+  while (scrolled < scrollHeight) {
+    await page.evaluate(() => {
+      window.scrollBy(0, 100); // Rola para baixo
+    });
+    scrolled += distance;
+    // Usar a função wait para adicionar delay
+    await wait(250); // Espera 2000 milissegundos (2 segundos)
+  }
+  // Extrai os produtos após cada rolagem
+  const products = await page.evaluate(() => {
+    const extractedInfo = [];
+    // Selecionar todas as divs com a classe para os produtos
+    const productElements = document.querySelectorAll(".shelf-item");
+
+    if (!productElements.length) {
+      console.warn("Nenhum elemento com a classe .shelf-item foi encontrado.");
+    }
+
+    productElements.forEach((product) => {
+      // Extraindo o título
+      const titleElement = product.querySelector(".shelf-item__title-link");
+      const title = titleElement
+        ? titleElement.textContent.trim()
+        : "Título indisponível";
+
+      // Extraindo o preço
+      const priceElement = product.querySelector("div.best-price strong");
+      const price = priceElement
+        ? priceElement.textContent.trim()
+        : "Preço indisponível";
+
+      // Extraindo a URL da imagem
+      const imageElement = product.querySelector("a.shelf-item__img-link img");
+      const image = imageElement ? imageElement.src : "Imagem indisponível";
+
+      // Adiciona o item mesmo que alguns dados estejam ausentes
+      extractedInfo.push({ title, price, image });
+    });
+    return extractedInfo;
+  });
+
+  // Adiciona os produtos extraídos ao array principal
+  items.push(...products);
+
+  return items;
+}
 
 // Função de scraping
 async function scrapeSupermarket(url) {
+  const items = [];
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   if (
@@ -44,8 +99,6 @@ async function scrapeSupermarket(url) {
         "72450120",
         { delay: 500 } // Ajuste o delay para 100 milissegundos entre cada tecla
       );
-
-      const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
       // Usar a função wait para adicionar delay
       await wait(2000); // Espera 2000 milissegundos (2 segundos)
@@ -101,75 +154,31 @@ async function scrapeSupermarket(url) {
       // Aguardar a navegação ou carregamento após o clique, se necessário
       await page.waitForNavigation({ waitUntil: "networkidle0" });
 
-      // Realizar a rolagem da página para baixo
+      // Realizar a rolagem contínua e extrair produtos
+      let products = await scrapeAndScroll(page);
+
+      items.push(...products);
+
       await page.evaluate(() => {
-        return new Promise((resolve) => {
-          let distance = 100; // Distância a ser rolada a cada vez
-          let scrollHeight = 12000;
-          let scrolled = 0;
-
-          // Rolando até o fim da página ou até 5 vezes
-          let interval = setInterval(() => {
-            window.scrollBy(0, distance);
-            scrolled += distance;
-            if (scrolled >= scrollHeight) {
-              clearInterval(interval);
-              resolve(); // Resolve a promessa quando a rolagem terminar
-            }
-          }, 100); // Rolagem a cada 500ms
-        });
-      });
-
-      await page.waitForSelector("a.pagination__button--next::before", {
-        visible: true,
-      });
-
-      // Clicar no botão "Próxima página"
-      await page.click("a.pagination__button--next::before");
-
-      // Extrair dados dos produtos
-      const products = await page.evaluate(() => {
-        const items = [];
-
-        // Selecionar todas as divs com a classe para os produtos
-        const productElements = document.querySelectorAll(".shelf-item");
-
-        if (!productElements.length) {
-          console.warn(
-            "Nenhum elemento com a classe .shelf-item foi encontrado."
-          );
+        const div = document.querySelector(".pagination"); // Seleciona a div com a classe pagination
+        const links = div ? div.querySelectorAll("a") : [];
+        if (links.length >= 6) {
+          links[5].click(); // Clica no sexto <a> (índice 5)
+        } else {
+          console.error("Não há 6 <a> elementos dentro da div .pagination");
         }
-
-        productElements.forEach((product) => {
-          // Extraindo o título
-          const titleElement = product.querySelector(".shelf-item__title-link");
-          const title = titleElement
-            ? titleElement.textContent.trim()
-            : "Título indisponível";
-
-          // Extraindo o preço
-          const priceElement = product.querySelector("div.best-price strong");
-          const price = priceElement
-            ? priceElement.textContent.trim()
-            : "Preço indisponível";
-
-          // Extraindo a URL da imagem
-          const imageElement = product.querySelector(
-            "a.shelf-item__img-link img"
-          );
-          const image = imageElement ? imageElement.src : "Imagem indisponível";
-
-          // Adiciona o item mesmo que alguns dados estejam ausentes
-          items.push({ title, price, image });
-        });
-        return items;
       });
+
+      // Realizar a rolagem contínua e extrair produtos
+      products = await scrapeAndScroll(page);
+
+      items.push(...products);
 
       // Você pode fazer o que quiser com os produtos aqui
       //console.log(products);
 
       await browser.close(); // Fecha o navegador
-      return products; // Retorna a resposta
+      return items; // Retorna a resposta
     } catch (error) {
       console.error("Erro ao fazer scraping:", error);
       await browser.close(); // Fecha o navegador em caso de erro
