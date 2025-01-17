@@ -19,7 +19,9 @@ async function scrapeAndScroll(page) {
   const items = [];
   let scrolled = 0;
   const distance = 100; // Distância a ser rolada a cada vez
-  const scrollHeight = 11750; // Tamanho total da página para rolar até o final
+  const scrollHeight = await page.evaluate(() => {
+    return document.documentElement.scrollHeight;
+  }); // Tamanho total da página para rolar até o final
 
   while (scrolled < scrollHeight) {
     await page.evaluate(() => {
@@ -129,6 +131,7 @@ async function scrapeSupermarket(url) {
           visible: true,
         }
       );
+
       await page.evaluate(() => {
         const element = document.querySelector(
           "a#dm876A > div.dp-bar-button.dp-bar-dismiss"
@@ -154,25 +157,39 @@ async function scrapeSupermarket(url) {
       // Aguardar a navegação ou carregamento após o clique, se necessário
       await page.waitForNavigation({ waitUntil: "networkidle0" });
 
-      // Realizar a rolagem contínua e extrair produtos
-      let products = await scrapeAndScroll(page);
+      let stop = false;
 
-      items.push(...products);
+      for (let i = 0; i < 4 && !stop; i++) {
+        // Realizar a rolagem contínua e extrair produtos
+        const products = await scrapeAndScroll(page);
 
-      await page.evaluate(() => {
-        const div = document.querySelector(".pagination"); // Seleciona a div com a classe pagination
-        const links = div ? div.querySelectorAll("a") : [];
-        if (links.length >= 6) {
-          links[5].click(); // Clica no sexto <a> (índice 5)
-        } else {
-          console.error("Não há 6 <a> elementos dentro da div .pagination");
-        }
-      });
+        items.push(...products);
 
-      // Realizar a rolagem contínua e extrair produtos
-      products = await scrapeAndScroll(page);
+        stop = await page.evaluate((currentIndex) => {
+          const div = document.querySelector(".pagination"); // Seleciona a div com a classe pagination
+          const links = div ? div.querySelectorAll("a") : [];
 
-      items.push(...products);
+          if (currentIndex == 0) {
+            if (links[5]) {
+              links[5]?.click();
+              return false;
+            } else {
+              links[3]?.click();
+              return true;
+            }
+          } else if (currentIndex == 1) {
+            links[7]?.click();
+          } else if (currentIndex == 2) {
+            links[8]?.click();
+          } else if (currentIndex == 3) {
+            links[9]?.click();
+          } else {
+            console.error("Não há 6 <a> elementos dentro da div .pagination");
+          }
+
+          return false;
+        }, i);
+      }
 
       // Você pode fazer o que quiser com os produtos aqui
       //console.log(products);

@@ -1,324 +1,99 @@
 {
-  "bebidas": [
+  "pet_shop": [
     {
-      "title": "Refrigerante Coca-Cola 2 Litros",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214508-160-160/2301822.jpg?v=637946944672970000"
-    },
-    {
-      "title": "Suco Natural One Uva 1,5 Litro",
-      "price": "R$ 17,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/215104-160-160/2380455.jpg?v=637964542579700000"
-    },
-    {
-      "title": "Suco Pronto Maguary Limonada Tradicional 1 Litro",
-      "price": "R$ 5,39",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/160830-160-160/741540.jpg?v=637210551213430000"
-    },
-    {
-      "title": "Refrigerante Coca-Cola Zero Lata 220ml",
-      "price": "R$ 2,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/188974-160-160/1799509.jpg?v=637593716982130000"
-    },
-    {
-      "title": "Refrigerante Coca-Cola Lata 220ml",
-      "price": "R$ 2,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/184576-160-160/7894900010398_2.jpg?v=637497077310500000"
-    },
-    {
-      "title": "Suco Integral Prat's Laranja 900ml",
-      "price": "R$ 15,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/157281-160-160/1140728.jpg?v=637210460846100000"
-    },
-    {
-      "title": "Água Mineral Crystal com Gás 1,5 Litro",
-      "price": "R$ 3,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190347-160-160/654655.jpg?v=637624745582530000"
-    },
-    {
-      "title": "Suco Pronto Nutrinectar Uva 1 Litro",
-      "price": "R$ 4,39",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/200716-160-160/7898920195141.jpg?v=637707736092600000"
-    },
-    {
-      "title": "Suco Concentrado Maguary Goiaba 500ml",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190343-160-160/608416.jpg?v=637624743423230000"
-    },
-    {
-      "title": "Refrigerante Guaraná Antarctica Pet 2 Litros",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/222879-160-160/66dc38c3f47a13a8a5a6bef177f1dca7_refrigerante-guarana-antarctica-pet-2-litros_lett_1.jpg?v=638180264072230000"
-    },
-    {
-      "title": "Refrigerante Guaraná Antarctica Zero Açúcar Pet 2 Litros",
-      "price": "R$ 6,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/230236-160-160/207233.jpg?v=638375803826770000"
-    },
-    {
-      "title": "Refrigerante Coca-Cola Zero Açúcar Pet 2 Litros",
-      "price": "R$ 8,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/188984-160-160/158666.jpg?v=637593721825400000"
-    },
-    {
-      "title": "Suco Integral Aurora Uva Tinto 1,5 Litro",
-      "price": "R$ 23,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/203244-160-160/31577-SUCO-CC-AURORA-15L-VD-UVA-TTO.jpg?v=637751669566830000"
-    },
-    {
-      "title": "Suco Pronto Subello Morango 1L",
-      "price": "R$ 4,59",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244046-160-160/2764946.jpg?v=638677946729500000"
-    },
-    {
-      "title": "Cerveja Hoegaarden Witbier Lata 269ml",
-      "price": "R$ 5,49",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237155-160-160/7891991298476--1-.jpg?v=638527689075530000"
-    },
-    {
-      "title": "Água Tônica Antarctica Sem Açúcar Lata 269ml",
-      "price": "R$ 2,69",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/238047-160-160/7891991015943-AguaTonicaAntarcticaZeroAcucarLata269ML-1.jpg?v=638537345438000000"
-    },
-    {
-      "title": "Suco Natural One Laranja 1,5 Litro",
-      "price": "R$ 25,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/214499-160-160/7899916904853.jpg?v=637946895768500000"
-    },
-    {
-      "title": "Refrigerante Coca-Cola Sem Açúcar 1,51 Litro",
-      "price": "R$ 7,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190245-160-160/687472.jpg?v=637623873735230000"
-    },
-    {
-      "title": "Cerveja Heineken Long Neck 330ml",
-      "price": "R$ 5,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/200544-160-160/78936683_1.jpg?v=637707592500730000"
-    },
-    {
-      "title": "Refrigerante Baré Guarana Pet 2 Litros",
-      "price": "R$ 5,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/213535-160-160/7891991004107.jpg?v=637928881339170000"
-    },
-    {
-      "title": "Suco Maguary Uva Tinto 1,35 Litro",
-      "price": "R$ 13,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/176711-160-160/975850.jpg?v=637298334212100000"
-    },
-    {
-      "title": "Água Mineral Crystal Sem Gás 1,5 Litro",
-      "price": "R$ 3,39",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190346-160-160/654639.jpg?v=637624745155600000"
-    },
-    {
-      "title": "Água Mineral Crystal Com Gás 500ml",
-      "price": "R$ 1,79",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/190345-160-160/654590.jpg?v=637624744770600000"
-    },
-    {
-      "title": "Suco Pronto Del Valle Light Néctar de Uva 1 Litro",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/203105-160-160/7898341430777.jpg?v=637747476471800000"
-    },
-    {
-      "title": "Suco Pronto Nutrinectar Goiaba 200ml",
-      "price": "R$ 1,69",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/160092-160-160/622486.jpg?v=637210532943700000"
-    },
-    {
-      "title": "Suco Pronto Spres Uva 1,7L",
-      "price": "R$ 24,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/247139-160-160/2949440.jpg?v=638721216574630000"
-    },
-    {
-      "title": "Suco Pronto Spres Caju Tropical 1,7L",
-      "price": "R$ 19,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/247138-160-160/2949423.jpg?v=638721215131570000"
-    },
-    {
-      "title": "Suco Integral Spres Laranja 1,7L",
-      "price": "R$ 25,98",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/247137-160-160/2949407.jpg?v=638721213374470000"
-    },
-    {
-      "title": "Cerveja Amstel Lager Puro Malte Long Neck 355ml",
-      "price": "R$ 4,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245434-160-160/2949377.jpg?v=638699695051500000"
-    },
-    {
-      "title": "Cerveja Corona Cero Sunbrew Sem Álcool Long Neck 330ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/239064-160-160/7891991304184--1-.jpg?v=638569029703930000"
-    },
-    {
-      "title": "Energético Fusion Tradicional Lata 473ml",
-      "price": "R$ 4,69",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/241421-160-160/2941694.jpg?v=638634948679270000"
-    },
-    {
-      "title": "Aperitivo Bitter Campari 998ml",
-      "price": "R$ 83,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245389-160-160/2933675.jpg?v=638699614575270000"
-    },
-    {
-      "title": "Refresco em Pó Frisco Cajá 18g",
-      "price": "R$ 0,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245380-160-160/2928558.jpg?v=638699604241370000"
-    },
-    {
-      "title": "Refresco em Pó Frisco Laranja com Acerola 18g",
-      "price": "R$ 0,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245379-160-160/2928507.jpg?v=638699603426730000"
-    },
-    {
-      "title": "Refresco em Pó Frisco Goiaba 18g",
-      "price": "R$ 0,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245378-160-160/2928493.jpg?v=638699602878770000"
-    },
-    {
-      "title": "Refresco em Pó Frisco Salada de Frutas 18g",
-      "price": "R$ 0,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/247078-160-160/2928477.jpg?v=638720447912900000"
-    },
-    {
-      "title": "Isotônico Plant Power Jungle Endurance Limonada 500ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245377-160-160/2927527.jpg?v=638699602113800000"
-    },
-    {
-      "title": "Isotônico Plant Power Jungle Endurance Tangerina 500ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245376-160-160/2927101.jpg?v=638699601524030000"
-    },
-    {
-      "title": "Isotônico Plant Power Jungle Low Carb Morango com Limão 500ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245375-160-160/2927071.jpg?v=638699600638300000"
-    },
-    {
-      "title": "Isotônico Plant Power Jungle Low Carb Uva 500ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245374-160-160/2927047.jpg?v=638699598979470000"
-    },
-    {
-      "title": "Bebida Mista Beats Tropical Gin e Frutas Tropicais Long Neck 269ml",
-      "price": "R$ 7,89",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/243489-160-160/7891991306188--1-.jpg?v=638676141667800000"
-    },
-    {
-      "title": "Vinho Chileno Casillero del Diablo Belight Sauvignon Blanc 750ml",
-      "price": "R$ 59,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/233438-160-160/7804320756820_99_1_1200_72_SRGB.jpg?v=638437133345170000"
-    },
-    {
-      "title": "Vinho Chileno Casillero del Diablo Devil's Carnaval Fabulous Red 750ml",
-      "price": "R$ 59,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/233436-160-160/7804320760117_99_1_1200_72_SRGB.jpg?v=638437132713830000"
-    },
-    {
-      "title": "Vinho Chileno Casillero del Diablo Devil's Carnaval Fantastic Sweet 750ml",
-      "price": "R$ 59,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/233435-160-160/7804320760131_99_1_1200_72_SRGB.jpg?v=638437132617270000"
-    },
-    {
-      "title": "Vinho Chileno Casillero del Diablo Devil's Carnaval Spectacular Cabernet 750ml",
-      "price": "R$ 59,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/233890-160-160/2921499.jpg?v=638449175703830000"
-    },
-    {
-      "title": "Energético TNT Mango Summer Lata 473ml",
-      "price": "R$ 7,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245327-160-160/2917050.jpg?v=638699545365130000"
-    },
-    {
-      "title": "Vinho Chileno Montañero Sauvignon Blanc 750ml",
-      "price": "R$ 38,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/245140-160-160/2895560.jpg?v=638696119071000000"
-    },
-    {
-      "title": "Caldo Maggi Galinha Tablete 114g",
-      "price": "R$ 5,25",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/247227-160-160/7891000251539.jpg?v=638723973712630000"
-    },
-    {
-      "title": "Bebida Mista Skol Beats Caipirinha Long Neck 269ml",
-      "price": "R$ 7,89",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237631-160-160/7891991304849--1-.jpg?v=638532274380470000"
-    },
-    {
-      "title": "Bebida Mista Skol Beats Caipirinha Lata 269ml",
-      "price": "R$ 3,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237179-160-160/7891991304252--1-.jpg?v=638527689624030000"
-    },
-    {
-      "title": "Cerveja Spaten Puro Malte Lata 269ml",
-      "price": "R$ 3,29",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/237184-160-160/7891991303347_1.jpg?v=638527689752370000"
-    },
-    {
-      "title": "Vodka Vorus Tradicional 1L",
-      "price": "R$ 26,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/244103-160-160/2814587.jpg?v=638678001376730000"
-    },
-    {
-      "title": "Cerveja Eisenbahn Pilsen Puro Malte Unfiltered Lata 350ml",
-      "price": "R$ 4,69",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/235499-160-160/2810450_Cerveja-Eisenbahn-Pilsen-Puro-Malte-Unfiltered-Lata-350ml.jpg?v=638484394328900000"
-    },
-    {
-      "title": "Whisky Johnnie Walker Blonde 750ml",
-      "price": "R$ 119,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/219839-160-160/5000267190556_33_3_1200_72_RGB.jpg?v=638131009689770000"
-    },
-    {
-      "title": "Energético Red Bull Summer Edition Morango e Pêssego Lata 250ml",
-      "price": "R$ 9,99",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/228649-160-160/2800837_9002490258825_BEB.ENERGY-RED-BULL-250ML-APRICSTR..jpg?v=638328155706200000"
-    },
-    {
-      "title": "Suco Integral Aurora Uva Tinto Caixa 1,5 Litro",
+      "title": "Colônia para Cães e Gatos Petbrill Fêmea 100ml",
       "price": "R$ 19,90",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/230241-160-160/2788624-7891141036170_1_3_3000_300_SRGB.jpg?v=638376629824700000"
+      "image": "https://comper.vteximg.com.br/arquivos/ids/208300-160-160/7898275011554.jpg?v=637804377519530000"
     },
     {
-      "title": "Suco Pronto Dafruta Goiaba 1L",
-      "price": "R$ 4,59",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/243285-160-160/2787482.jpg?v=638671104115900000"
+      "title": "Shampoo Cães e Gatos Petbrilho Pelos Claros 500ml",
+      "price": "R$ 18,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/160511-160-160/692166.jpg?v=637210544213970000"
     },
     {
-      "title": "Refresco em Pó Tang Abacaxi 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231043-160-160/7622210571755-Refresco_em_p_Tang_Abacaxi_18g-site_1000x1000--1-.jpg?v=638391974597230000"
+      "title": "Shampoo Cães e Gatos Petbrilho Filhotes 500ml",
+      "price": "R$ 17,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/161386-160-160/692158.jpg?v=637210563944470000"
     },
     {
-      "title": "Refresco Em Pó Tang Goiaba 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231010-160-160/7622210571496-Refresco_em_p_Tang_Goiaba_18g-site_1000x1000--1-.jpg?v=638391959898500000"
+      "title": "Shampoo Cães e Gatos Petbrilho Neutro 500ml",
+      "price": "R$ 17,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/160510-160-160/692140.jpg?v=637210544195170000"
     },
     {
-      "title": "Refresco em Pó Tang Guananá 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231045-160-160/7622210571816-Refresco_em_p_Tang_Guaran_18g-site_1000x1000--1-.jpg?v=638391974731430000"
+      "title": "Ração Úmida para Gatos Friskies Frango ao Molho 85g",
+      "price": "R$ 2,59",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/230912-160-160/7891000118054_1.jpg?v=638388494840470000"
     },
     {
-      "title": "Refresco em Pó Tang Laranja Docinha 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231013-160-160/7622210571571-Refresco_em_p_Tang_Laranja_Docinha_18g-site_1000x1000--1-.jpg?v=638391960193130000"
+      "title": "Banho Seco para Cães e Gatos Petbrilho 200ml",
+      "price": "R$ 29,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/158495-160-160/680290.jpg?v=637210492220600000"
     },
     {
-      "title": "Refresco em Pó Tang Laranja e Mamão 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231046-160-160/7622210571847-Refresco_em_p_Tang_Laranja_Mam_o_18g-site_1000x1000--1-.jpg?v=638391974790630000"
+      "title": "Shampoo para Cães e Gatos Petbrilho 2 em 1 500ml",
+      "price": "R$ 17,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/159600-160-160/659134.jpg?v=637210520480500000"
     },
     {
-      "title": "Refresco em Pó Tang Laranja 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231014-160-160/7622210571601-Refresco_em_p_Tang_Laranja_18g-site_1000x1000--1-.jpg?v=638391960385000000"
+      "title": "Ração Úmida para Cães Pedigree Filhotes Carne e Frango Lata 280g",
+      "price": "R$ 13,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195201-160-160/7896029079522.jpg?v=637661861581100000"
     },
     {
-      "title": "Refresco em Pó Tang Maracujá 18g",
-      "price": "R$ 1,19",
-      "image": "https://comper.vteximg.com.br/arquivos/ids/231041-160-160/7622210571694-Refresco_em_p_Tang_Maracuj_18g-site_1000x1000--1-.jpg?v=638391974492400000"
+      "title": "Ração Úmida para Gatos Whiskas Carne ao Molho Lata 290g",
+      "price": "R$ 13,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195195-160-160/7896029072622.jpg?v=637661848611930000"
+    },
+    {
+      "title": "Ração Úmida para Gatos Whiskas Peixe Lata 290g",
+      "price": "R$ 13,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195199-160-160/7896029079485.jpg?v=637661858258600000"
+    },
+    {
+      "title": "Ração Úmida para Cães Pedigree Carne Lata 280g",
+      "price": "R$ 13,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195200-160-160/7896029079508.jpg?v=637661858919970000"
+    },
+    {
+      "title": "Ração Úmida para Cães Pedigree Raças Pequenas Cordeiro Sachê 100g",
+      "price": "R$ 3,69",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195181-160-160/7896029022276.jpg?v=637661271356100000"
+    },
+    {
+      "title": "Ração Úmida para Cães Pedigree Raças Pequenas Carne Sachê 100g",
+      "price": "R$ 3,69",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/208307-160-160/7896029022245.jpg?v=637804436999800000"
+    },
+    {
+      "title": "Ração Úmida para Gatos Whiskas Adulto Atum ao Molho Sachê 85g",
+      "price": "R$ 3,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/178774-160-160/Racao-umida-para-Gatos-Whiskas-Adulto-Atum-ao-Molho-Sache-85g.jpg?v=637364620196800000"
+    },
+    {
+      "title": "Ração Úmida para Gatos Whiskas Adulto Carne ao Molho Sachê 85g",
+      "price": "R$ 3,49",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/178773-160-160/Racao-umida-para-Gatos-Whiskas-Adulto-Carne-ao-Molho-Sache-85g.jpg?v=637364620194000000"
+    },
+    {
+      "title": "Ração para Gatos Friskies Adulto Peixes e Frutos do Mar 3kg",
+      "price": "R$ 69,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/226352-160-160/7891000069431---NESTLE%C2%AE-PURINA%C2%AE-FRISKIES%C2%AE-Racao-Seca-para-Gatos-Adultos-Peixe-e-Frutos-do-Mar-3kg.jpg?v=638289353319500000"
+    },
+    {
+      "title": "Ração para Gatos Friskies Mix de Carnes 3kg",
+      "price": "R$ 69,90",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/227113-160-160/7891000069417---NESTLE%C2%AE-PURINA%C2%AE-FRISKIES%C2%AE-Racao-Seca-para-Gatos-Adultos-Mix-de-Carnes-3kg.jpg?v=638304001624470000"
+    },
+    {
+      "title": "Escova para Cães Baw Waw Grande de Aço",
+      "price": "Preço indisponível",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/160768-160-160/871141.jpg?v=637210549865070000"
+    },
+    {
+      "title": "Tapete Higiênico Baw Waw 55x60cm Com 7 Unidades",
+      "price": "Preço indisponível",
+      "image": "https://comper.vteximg.com.br/arquivos/ids/195240-160-160/7899306000059.jpg?v=637661877729400000"
     }
   ]
 }
