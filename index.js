@@ -73,7 +73,7 @@ async function scrapeAndScroll(page) {
 // Função de scraping
 async function scrapeSupermarket(url) {
   const items = [];
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   if (
     url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
