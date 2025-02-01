@@ -3,6 +3,7 @@ const puppeteer = require("puppeteer");
 const cors = require("cors");
 const fs = require("fs");
 const cron = require("node-cron");
+const { error } = require("console");
 
 const app = express();
 app.use(cors());
@@ -15,7 +16,7 @@ let info = [];
 const DATA_FILE = "scraped_data.json";
 
 // Realizar a rolagem da página para baixo e extrair os dados dos produtos
-async function scrapeAndScroll(page) {
+async function scrapeAndScrollComper(page) {
   const items = [];
   let scrolled = 0;
   const distance = 100; // Distância a ser rolada a cada vez
@@ -70,166 +71,348 @@ async function scrapeAndScroll(page) {
   return items;
 }
 
+async function scrapeAndScrollOlhoDAgua(page) {
+  const items = [];
+  let scrolled = 0;
+  const distance = 100; // Distância a ser rolada a cada vez
+  const scrollHeight = await page.evaluate(() => {
+    return document.documentElement.scrollHeight;
+  }); // Tamanho total da página para rolar até o final
+
+  while (scrolled < scrollHeight) {
+    await page.evaluate(() => {
+      window.scrollBy(0, 100); // Rola para baixo
+    });
+    scrolled += distance;
+    // Usar a função wait para adicionar delay
+    await wait(250); // Espera 2000 milissegundos (2 segundos)
+  }
+  // Extrai os produtos após cada rolagem
+  const products = await page.evaluate(() => {
+    const extractedInfo = [];
+    // Selecionar todas as divs com a classe para os produtos
+    const productElements = document.querySelectorAll(
+      "div.css-0 div.ib-flex.is-direction-column.is-align-center.is-justify-space-between.is-gap-2.is-wrap-nowrap a"
+    );
+
+    if (!productElements.length) {
+      console.warn("Nenhum elemento com a classe .shelf-item foi encontrado.");
+    }
+
+    productElements.forEach((product) => {
+      // Extraindo o título
+      const titleElement = product.querySelector(
+        "div:nth-of-type(2) p:nth-of-type(2)"
+      );
+
+      const title = titleElement
+        ? titleElement.textContent.trim()
+        : "Título indisponível";
+
+      // Extraindo o preço
+      const priceElement = product.querySelector("div:first-of-type div p");
+
+      const price = priceElement
+        ? priceElement.textContent.trim().replace("/kg", "")
+        : "Preço indisponível";
+
+      // Extraindo a URL da imagem
+      const imageElement = product.querySelector("img");
+      const image = imageElement ? imageElement.src : "Imagem indisponível";
+
+      // Adiciona o item mesmo que alguns dados estejam ausentes
+      extractedInfo.push({ title, price, image });
+    });
+    return extractedInfo;
+  });
+
+  // Adiciona os produtos extraídos ao array principal
+  items.push(...products);
+
+  return items;
+}
+
 // Função de scraping
 async function scrapeSupermarket(url) {
   const items = [];
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
-  if (
-    url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
-  ) {
-    try {
-      // Iniciar a navegação
-      await page.goto(url, { waitUntil: "domcontentloaded" });
+  if (url.length > 14) {
+    if (
+      url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
+    ) {
+      try {
+        // Iniciar a navegação
+        await page.goto(url, { waitUntil: "domcontentloaded" });
 
-      // Aguardar e fechar o primeiro pop-up
-      await page.waitForSelector("div.app-modal__close", { visible: false });
-      await page.evaluate(() => {
-        const element = document.querySelector("div.app-modal__close");
-        if (element) {
-          element.click();
-        }
-      });
-
-      // Aguardar o input de CEP aparecer
-      await page.waitForSelector(
-        "div.modalCep-content--insertPostalCode-postalCodeContainer input",
-        { visible: true }
-      );
-      await page.type(
-        "div.modalCep-content--insertPostalCode-postalCodeContainer input",
-        "72450120",
-        { delay: 500 } // Ajuste o delay para 100 milissegundos entre cada tecla
-      );
-
-      // Usar a função wait para adicionar delay
-      await wait(2000); // Espera 2000 milissegundos (2 segundos)
-
-      // Aguardar o botão de ação e clicar
-      await page.waitForSelector("button#cepInsertedAction", {
-        visible: true,
-      });
-      await page.click("button#cepInsertedAction");
-
-      // Aguardar para a navegação ou carregamento após a interação
-      await page.waitForSelector(
-        "div.modalCep-content--pickDeliveryType--types-delivery-content--item input",
-        { visible: true }
-      );
-      await page.evaluate(() => {
-        const element = document.querySelector(
-          "div.modalCep-content--pickDeliveryType--types-delivery-content--item input"
-        );
-        if (element) {
-          element.click();
-        }
-      });
-
-      await page.waitForSelector(
-        "a#dm876A > div.dp-bar-button.dp-bar-dismiss",
-        {
-          visible: true,
-        }
-      );
-
-      await page.evaluate(() => {
-        const element = document.querySelector(
-          "a#dm876A > div.dp-bar-button.dp-bar-dismiss"
-        );
-        if (element) {
-          element.click();
-        }
-      });
-
-      // Aguardar e fechar o pop-up
-      await page.waitForSelector("button#deliveryTypeSelected", {
-        visible: true,
-      });
-      await page.evaluate(() => {
-        const element = document.querySelector("button#deliveryTypeSelected");
-        if (element) {
-          element.click();
-        }
-      });
-
-      console.log("Último pop-up fechado.");
-
-      // Aguardar a navegação ou carregamento após o clique, se necessário
-      await page.waitForNavigation({ waitUntil: "networkidle0" });
-
-      let stop = false;
-
-      for (let i = 0; i < 4 && !stop; i++) {
-        // Realizar a rolagem contínua e extrair produtos
-        const products = await scrapeAndScroll(page);
-
-        items.push(...products);
-
-        stop = await page.evaluate((currentIndex) => {
-          const div = document.querySelector(".pagination"); // Seleciona a div com a classe pagination
-          const links = div ? div.querySelectorAll("a") : [];
-
-          if (currentIndex == 0) {
-            if (links[5]) {
-              links[5]?.click();
-              return false;
-            } else {
-              links[3]?.click();
-              return true;
-            }
-          } else if (currentIndex == 1) {
-            links[7]?.click();
-          } else if (currentIndex == 2) {
-            links[8]?.click();
-          } else if (currentIndex == 3) {
-            links[9]?.click();
-          } else {
-            console.error("Não há 6 <a> elementos dentro da div .pagination");
+        // Aguardar e fechar o primeiro pop-up
+        await page.waitForSelector("div.app-modal__close", { visible: false });
+        await page.evaluate(() => {
+          const element = document.querySelector("div.app-modal__close");
+          if (element) {
+            element.click();
           }
+        });
 
-          return false;
-        }, i);
+        // Aguardar o input de CEP aparecer
+        await page.waitForSelector(
+          "div.modalCep-content--insertPostalCode-postalCodeContainer input",
+          { visible: true }
+        );
+        await page.type(
+          "div.modalCep-content--insertPostalCode-postalCodeContainer input",
+          "72450120",
+          { delay: 500 } // Ajuste o delay para 100 milissegundos entre cada tecla
+        );
+
+        // Usar a função wait para adicionar delay
+        await wait(2000); // Espera 2000 milissegundos (2 segundos)
+
+        // Aguardar o botão de ação e clicar
+        await page.waitForSelector("button#cepInsertedAction", {
+          visible: true,
+        });
+        await page.click("button#cepInsertedAction");
+
+        // Aguardar para a navegação ou carregamento após a interação
+        await page.waitForSelector(
+          "div.modalCep-content--pickDeliveryType--types-delivery-content--item input",
+          { visible: true }
+        );
+        await page.evaluate(() => {
+          const element = document.querySelector(
+            "div.modalCep-content--pickDeliveryType--types-delivery-content--item input"
+          );
+          if (element) {
+            element.click();
+          }
+        });
+
+        await page.waitForSelector(
+          "a#dm876A > div.dp-bar-button.dp-bar-dismiss",
+          {
+            visible: true,
+          }
+        );
+
+        await page.evaluate(() => {
+          const element = document.querySelector(
+            "a#dm876A > div.dp-bar-button.dp-bar-dismiss"
+          );
+          if (element) {
+            element.click();
+          }
+        });
+
+        // Aguardar e fechar o pop-up
+        await page.waitForSelector("button#deliveryTypeSelected", {
+          visible: true,
+        });
+        await page.evaluate(() => {
+          const element = document.querySelector("button#deliveryTypeSelected");
+          if (element) {
+            element.click();
+          }
+        });
+
+        console.log("Último pop-up fechado.");
+
+        // Aguardar a navegação ou carregamento após o clique, se necessário
+        await page.waitForNavigation({ waitUntil: "networkidle0" });
+
+        let stop = false;
+
+        for (let i = 0; i < 4 && !stop; i++) {
+          // Realizar a rolagem contínua e extrair produtos
+          const products = await scrapeAndScrollComper(page);
+
+          items.push(...products);
+
+          stop = await page.evaluate((currentIndex) => {
+            const div = document.querySelector(".pagination"); // Seleciona a div com a classe pagination
+            const links = div ? div.querySelectorAll("a") : [];
+
+            if (currentIndex == 0) {
+              if (links[5]) {
+                links[5]?.click();
+                return false;
+              } else {
+                links[3]?.click();
+                return true;
+              }
+            } else if (currentIndex == 1) {
+              links[7]?.click();
+            } else if (currentIndex == 2) {
+              links[8]?.click();
+            } else if (currentIndex == 3) {
+              links[9]?.click();
+            } else {
+              console.error("Não há 6 <a> elementos dentro da div .pagination");
+            }
+
+            return false;
+          }, i);
+        }
+
+        // Você pode fazer o que quiser com os produtos aqui
+        //console.log(products);
+
+        await browser.close(); // Fecha o navegador
+        return items; // Retorna a resposta
+      } catch (error) {
+        console.error("Erro ao fazer scraping:", error);
+        await browser.close(); // Fecha o navegador em caso de erro
+        throw error;
       }
+    }
+  } else {
+    // url = [
+    //   {
+    //     link: "https://superolhodagua.instabuy.com.br/sub/Acougue-Aves-Peixaria/5d12304d26ce8991c70e4c7a",
+    //   },
+    // ];
+    for (let i = 0; i < url.length; i++) {
+      if (
+        url[i].link
+          .toLowerCase()
+          .startsWith("https://superolhodagua.instabuy.com.br/".toLowerCase())
+      ) {
+        try {
+          // Iniciar a navegação
+          await page.goto(url[i].link, { waitUntil: "domcontentloaded" });
 
-      // Você pode fazer o que quiser com os produtos aqui
-      //console.log(products);
+          // Aguardar e fechar o primeiro pop-up
+          await page.waitForSelector("div.css-1qe97w9", { visible: true });
 
-      await browser.close(); // Fecha o navegador
-      return items; // Retorna a resposta
-    } catch (error) {
-      console.error("Erro ao fazer scraping:", error);
-      await browser.close(); // Fecha o navegador em caso de erro
-      throw error;
+          let stop = false;
+
+          for (let i = 0; i < 2 && !stop; i++) {
+            // Realizar a rolagem contínua e extrair produtos
+            const products = await scrapeAndScrollOlhoDAgua(page);
+
+            items.push(...products);
+
+            // Seletor que cobre tanto 'a' quanto 'button' com as classes especificadas
+            const selector =
+              'a[aria-label="back to page 2"], button[aria-label="back go page 2"';
+
+            // Verifica se existe algum elemento correspondente
+            const elementExists = await page
+              .$(selector)
+              .then((element) => !!element);
+
+            if (elementExists) {
+              // Verifica se o elemento está desabilitado (considera 'disabled' e 'aria-disabled')
+              const isDisabled = await page.$eval(selector, (element) => {
+                return (
+                  element.hasAttribute("disabled") ||
+                  element.getAttribute("aria-disabled") === "true"
+                );
+              });
+
+              console.log("Está desabilitado?", isDisabled);
+
+              if (!isDisabled) {
+                // Clica no elemento usando Puppeteer (cosm tratamento de erro)
+                await page.click(selector).catch(() => {});
+                console.log("Clique realizado");
+                stop = false;
+              } else {
+                console.log("Elemento desabilitado - não clicou");
+                stop = true;
+              }
+            } else {
+              console.log("Elemento não encontrado");
+              stop = true;
+            }
+          }
+        } catch (error) {
+          console.log(error);
+          await browser.close();
+        }
+      } else {
+        items.push("");
+      }
+    }
+    await browser.close(); // Fecha o navegador
+    return items; // Retorna a resposta
+  }
+}
+
+//Função para obter o último valor de uma "escada" de objetos
+function getLastValues(obj) {
+  const result = [];
+
+  function navigate(current) {
+    for (const key in current) {
+      //Verifica se o tipo da chave atual dentro do objeto original é igual a um objeto e também se o valor é nulo
+      if (typeof current[key] === "object" && current[key] !== null) {
+        navigate(current[key]); // Continua navegando se for um objeto
+      } else {
+        result.push({ name: key, link: current[key] }); // Adiciona o último valor encontrado
+      }
     }
   }
+
+  navigate(obj);
+  return result;
 }
 
 // Função para realizar scraping diário
 async function performDailyScraping() {
-  console.log(info);
-  try {
-    const activeCategories = Object.entries(info[2])
-      .filter(([key, value]) => value)
-      .map(([key]) => key);
+  let scrapingResults = {
+    comper: {},
+    olho_d_agua: {},
+  };
+  const categories = [
+    "alimentacao_saudavel",
+    "bebidas",
+    "casa_e_lazer",
+    "carnes",
+    "congelados",
+    "frios",
+    "higiene",
+    "hortifruti",
+    "infantil",
+    "limpeza",
+    "matinais",
+    "mercearia",
+    "padaria",
+    "pet_shop",
+    "doces",
+    "perfumaria",
+    "outras_categorias",
+  ];
+  // for (let i = 0; i < categories.length; i++) {
+  // const activeCategory = categories[i];
+  const activeCategory = "mercearia";
 
-    const scrapingResults = {};
-
-    for (const category of activeCategories) {
-      const url = info[1][category];
-      if (url) {
-        console.log(`Iniciando scraping para: ${category} - ${url}`);
-        scrapingResults[category] = await scrapeSupermarket(url);
-      } else {
-        scrapingResults[category] = [];
-      }
-    }
-
-    // Salvar resultados no arquivo JSON
-    fs.writeFileSync(DATA_FILE, JSON.stringify(scrapingResults, null, 2));
-    console.log("Scraping diário concluído e dados salvos.");
-  } catch (error) {
-    console.error("Erro durante o scraping diário:", error);
+  const allValues = getLastValues(info[1][activeCategory]);
+  let url = [];
+  if (allValues.length < 21) {
+    url = allValues;
+  } else {
+    url = info[1][activeCategory];
   }
+
+  if (url) {
+    console.log(`Iniciando scraping para: ${activeCategory} - ${url}`);
+    if (info[0].startsWith("https://superolhodagua.instabuy.com.br/")) {
+      scrapingResults.olho_d_agua[activeCategory] = await scrapeSupermarket(
+        url
+      );
+    } else if (info[0].startsWith("https://www.comper.com.br")) {
+      scrapingResults.comper[activeCategory] = await scrapeSupermarket(url);
+    }
+  } else {
+    console.log("Não existe");
+    scrapingResults[activeCategory] = [];
+  }
+  // }
+
+  // Salvar resultados no arquivo JSON
+  fs.writeFileSync(DATA_FILE, JSON.stringify(scrapingResults, null, 2));
+  console.log("Scraping diário concluído e dados salvos.");
 }
 
 // Adicionar um endpoint para iniciar o scraping manualmente
@@ -249,9 +432,7 @@ cron.schedule("0 0 * * *", performDailyScraping);
 
 // Rota para receber informações iniciais
 app.post("/info", (req, res) => {
-  console.log("Info antes:", info);
   info = req.body;
-  console.log("Info Depois:", info);
   res.send("Informações recebidas.");
 });
 
