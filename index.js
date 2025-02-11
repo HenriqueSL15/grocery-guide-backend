@@ -137,7 +137,7 @@ async function scrapeSupermarket(url) {
   const items = [];
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
-  if (url.length > 14) {
+  if (url.length > 14 && typeof url === "string") {
     if (
       url.toLowerCase().startsWith("https://www.comper.com.br/".toLowerCase())
     ) {
@@ -383,9 +383,9 @@ async function performDailyScraping() {
     "perfumaria",
     "outras_categorias",
   ];
-  // for (let i = 0; i < categories.length; i++) {
-  // const activeCategory = categories[i];
-  const activeCategory = "mercearia";
+  for (let i = 0; i < categories.length; i++) {
+  const activeCategory = categories[i];
+  // const activeCategory = "mercearia";
 
   const allValues = getLastValues(info[1][activeCategory]);
   let url = [];
@@ -408,7 +408,7 @@ async function performDailyScraping() {
     console.log("Não existe");
     scrapingResults[activeCategory] = [];
   }
-  // }
+  }
 
   // Salvar resultados no arquivo JSON
   fs.writeFileSync(DATA_FILE, JSON.stringify(scrapingResults, null, 2));
