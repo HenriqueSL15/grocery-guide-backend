@@ -722,3 +722,6 @@ app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
 server.setTimeout(7200000);
+
+// "node-cron": "^3.0.3",
+// "puppeteer": "^23.11.1"

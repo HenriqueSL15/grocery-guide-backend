@@ -14,8 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "fs": "^0.0.1-security",
-    "node-cron": "^3.0.3",
     "nodemon": "^3.1.9",
-    "puppeteer": "^23.11.1"
+    
   }
 }
