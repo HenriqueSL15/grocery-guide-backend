@@ -706,6 +706,7 @@ app.get("/", (req, res) => {
 // Rota para acessar os dados armazenados
 app.get("/data", (req, res) => {
   try {
+    console.log(fs.existsSync(DATA_FILE));
     if (fs.existsSync(DATA_FILE)) {
       const data = fs.readFileSync(DATA_FILE, "utf8");
       res.json(JSON.parse(data));
