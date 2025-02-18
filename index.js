@@ -1,10 +1,10 @@
 const express = require("express");
-const puppeteer = require("puppeteer");
+// const puppeteer = require("puppeteer");
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
-const cron = require("node-cron");
-const { error } = require("console");
+// const cron = require("node-cron");
+// const { error } = require("console");
 
 const app = express();
 app.use(
@@ -721,7 +721,4 @@ app.get("/data", (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
-server.setTimeout(7200000);
-
-// "node-cron": "^3.0.3",
-// "puppeteer": "^23.11.1"
+// server.setTimeout(7200000);
