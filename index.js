@@ -7,7 +7,13 @@ const cron = require("node-cron");
 const { error } = require("console");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://silly-puppy-ee877a.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -367,7 +373,16 @@ async function scrapeAndScrollOlhoDAgua(page) {
 async function scrapeSupermarket(url) {
   console.log(url);
   const items = [];
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+    ],
+    executablePath:
+      process.env.PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath(),
+  });
   const page = await browser.newPage();
   if (url.length > 14 && typeof url === "string") {
     if (
@@ -708,3 +723,4 @@ app.get("/data", (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
+server.setTimeout(7200000);
