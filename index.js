@@ -686,6 +686,12 @@ app.post("/start-scraping", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send(
+    "Backend do Grocery Guide está online! Use /data para acessar os produtos."
+  );
+});
+
 // Configurar cron job para executar o scraping diariamente às 00:00
 cron.schedule("0 0 * * *", () => {
   const caminhoArquivo = path.join(__dirname, DATA_FILE);
