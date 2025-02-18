@@ -2,6 +2,7 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 const cors = require("cors");
 const fs = require("fs");
+const path = require("path");
 const cron = require("node-cron");
 const { error } = require("console");
 
@@ -631,14 +632,11 @@ async function performDailyScraping() {
 
       const allValues = getLastValues(links[0][activeMarket][activeCategory]);
       let url = [];
-      // .length < 21
-      console.log(typeof allValues);
       if (typeof allValues == "object") {
         url = allValues;
       } else {
         url = links[0][activeMarket][activeCategory];
       }
-      // console.log(url);
 
       if (url) {
         console.log(`Iniciando scraping para: ${activeCategory} - ${url}`);
@@ -674,7 +672,17 @@ app.post("/start-scraping", async (req, res) => {
 });
 
 // Configurar cron job para executar o scraping diariamente às 00:00
-cron.schedule("0 0 * * *", performDailyScraping);
+cron.schedule("0 0 * * *", () => {
+  const caminhoArquivo = path.join(__dirname, DATA_FILE);
+  fs.unlink(caminhoArquivo, (err) => {
+    if (err) {
+      console.log("Erro ao remover o arquivo:", err);
+      return;
+    }
+    console.log("Arquivo removido com sucesso");
+  });
+  performDailyScraping();
+});
 
 // Rota para receber informações iniciais
 app.post("/info", (req, res) => {
