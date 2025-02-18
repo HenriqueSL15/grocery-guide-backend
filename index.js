@@ -709,6 +709,7 @@ app.get("/data", (req, res) => {
     console.error("Erro ao acessar dados armazenados:", error);
     res.status(500).send("Erro ao acessar dados armazenados.");
   }
+  res.json("Funcionou");
 });
 
 app.listen(port, () => {
