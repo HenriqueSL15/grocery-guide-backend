@@ -373,15 +373,12 @@ async function scrapeAndScrollOlhoDAgua(page) {
 async function scrapeSupermarket(url) {
   console.log(url);
   const items = [];
+  const chromium = require("@sparticuz/chromium-min"); // Adicione este pacote
   const browser = await puppeteer.launch({
+    args: [...chromium.args, "--hide-scrollbars", "--disable-web-security"],
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath(), // Caminho correto para Chromium
     headless: "new",
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-    ],
-    executablePath:
-      process.env.PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath(),
   });
   const page = await browser.newPage();
   if (url.length > 14 && typeof url === "string") {
@@ -513,11 +510,6 @@ async function scrapeSupermarket(url) {
       }
     }
   } else {
-    // url = [
-    //   {
-    //     link: "https://superolhodagua.instabuy.com.br/sub/Acougue-Aves-Peixaria/5d12304d26ce8991c70e4c7a",
-    //   },
-    // ];
     for (let i = 0; i < url.length; i++) {
       if (
         url[i].link
@@ -693,17 +685,17 @@ app.get("/", (req, res) => {
 });
 
 // Configurar cron job para executar o scraping diariamente às 00:00
-cron.schedule("0 0 * * *", () => {
-  const caminhoArquivo = path.join(__dirname, DATA_FILE);
-  fs.unlink(caminhoArquivo, (err) => {
-    if (err) {
-      console.log("Erro ao remover o arquivo:", err);
-      return;
-    }
-    console.log("Arquivo removido com sucesso");
-  });
-  performDailyScraping();
-});
+// cron.schedule("0 0 * * *", () => {
+//   const caminhoArquivo = path.join(__dirname, DATA_FILE);
+//   fs.unlink(caminhoArquivo, (err) => {
+//     if (err) {
+//       console.log("Erro ao remover o arquivo:", err);
+//       return;
+//     }
+//     console.log("Arquivo removido com sucesso");
+//   });
+//   performDailyScraping();
+// });
 
 // Rota para receber informações iniciais
 app.post("/info", (req, res) => {
