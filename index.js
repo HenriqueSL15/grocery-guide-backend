@@ -7,18 +7,11 @@ const cron = require("node-cron");
 const { error } = require("console");
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://silly-puppy-ee877a.netlify.app", // Domínio do seu frontend
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Métodos permitidos
-    allowedHeaders: ["Content-Type", "Authorization"], // Headers permitidos
-  })
-);
-app.options("*", cors());
+app.use(cors());
 app.use(express.json());
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 let info = [];
 const DATA_FILE = "scraped_data.json";
@@ -374,16 +367,7 @@ async function scrapeAndScrollOlhoDAgua(page) {
 async function scrapeSupermarket(url) {
   console.log(url);
   const items = [];
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-    ],
-    executablePath:
-      process.env.PUPPETEER_EXECUTABLE_PATH || puppeteer.executablePath(),
-  });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   if (url.length > 14 && typeof url === "string") {
     if (
@@ -719,7 +703,6 @@ app.get("/data", (req, res) => {
     console.error("Erro ao acessar dados armazenados:", error);
     res.status(500).send("Erro ao acessar dados armazenados.");
   }
-  res.json("Funcionou");
 });
 
 app.listen(port, () => {
