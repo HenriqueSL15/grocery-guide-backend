@@ -7,7 +7,13 @@ const cron = require("node-cron");
 const { error } = require("console");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://silly-puppy-ee877a.netlify.app", // Domínio do seu frontend
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
+    allowedHeaders: ["Content-Type", "Authorization"], // Headers permitidos
+  })
+);
 app.use(express.json());
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
